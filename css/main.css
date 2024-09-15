@@ -1,0 +1,90 @@
+
+header{
+    position:relative;
+    padding:0;
+}
+footer{
+    .login{
+        width: 300px;
+        height: 360px;
+        border: 2px solid grey;
+    }
+    .submit{
+        color: green;
+    }
+    
+}
+
+.modal-body{
+   .img-fluid{
+    min-height: 400px; 
+    width: 100%; 
+    object-fit: cover;
+   }
+   .intro{
+    text-align: center;
+
+   }
+    
+}
+
+main{
+    .card{
+        max-width: 500px; 
+        min-width:300px; 
+        border:none;
+        margin-top: 20px;
+        
+    }
+
+    #content{
+        display: flex;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+#about{
+    flex-basis: 70%;
+    background-color: #c5c689;
+    position:flex;
+    border: solid grey;
+   
+    
+}
+#slidebar{
+    flex-basis: 30%;
+}
+
+footer{
+    .top{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: cyan;
+        padding: 20px;
+        border-radius: 20px;
+
+        
+    }
+    .top img{
+        width: 80px;
+    }
+}
+.link  img{
+    height: 50px;
+    border-radius: 50%;
+   
+    
+}
+.wrap-content{
+    border: solid grey;
+    padding: 0 auto;
+    margin: 0;
+}
+
+
+
+

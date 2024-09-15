@@ -11,7 +11,7 @@
     type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" >Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Introduction</a>
@@ -48,30 +48,75 @@
       <div class="modal-body">
         <h2 class="fs-5">Tìm hiểu về genshin</h2>
         <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200412/2020041218064280834.jpg"
-          alt="gs">
-        <p>This Genshin Impact là trò chơi nhập vai hành động phiêu lưu thế giới mở
-          được phát triển và phát hành bởi HoYoverse trên các nền tảng PC, iOS/Android, và PS4/PS5.
+          alt="gs"
+          class="img-fluid"
+        >
+
+        
+
+        <div class="link">
+            <div class="row row-cols-3 row-cols-lg-5 g-3 g-lg-5">
+              <div class="col">
+                <a href="https://github.com/Monsieur-Map/GsWeb">
+                  <img src="https://cdn0.iconfinder.com/data/icons/social-15/200/github-icon-512.png"
+                  alt="github">
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://www.facebook.com/GenshinImpact.vi">
+                  <img src="./images/facebook.jpg"
+                  alt="facebook">
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://www.youtube.com/c/GenshinImpact">
+                  <img src="data:image/png;base64,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"
+                  alt="youtube">
+                </a>
+              </div>
+              <div class="col">
+                <a href="data:image/png;base64,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">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJk69iN6ZOn7krG0d_wtH01MR0CIjDuTAGg&s"
+                  alt="Reddit">
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://x.com/GenshinImpact">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKR_HSKg6dKNyZKfBxXeLsiKPYLcEsCPEM5A&s"
+                  alt="twitter">
+                </a>
+              </div>
+              
+              </div>
+            </div>
+        <p class="intro">This Genshin Impact là trò chơi nhập vai hành động phiêu lưu thế giới mở
+          được phát triển và phát hành bởi HoYoverse trên các nền tảng PC, iOS/Android, và PS4/PS5.<br>
 
           Đây là một trò chơi miễn phí sử dụng phương thức kinh doanh
-          từ hệ thống gacha dưới dạng Cầu Nguyện.</p>
-        <a href="#"></a>
+          từ hệ thống gacha dưới dạng Cầu Nguyện. <br>
+          Main developer: Monsieur-Map
+
+        </p>
+        
       </div>
     </div>
   </header>
-  <main>
-    
-    <div class="main-content row" >
+  <main class="row" width="100%">
+    <div class="wrap-content">
+      <h1 href="#" style="padding-left: 20%;"> <strong>Home</strong></h1>
+      <div class="main-content row" >
 
       
-        <section id="about" class="colored-section col-7" >
+      <section id="about" class="colored-section col-md-9" >
 
           <div class="container text-center">
-            <div class="row align-items-start">
+            <div class="row align-items-start" id="content">
 
               <div class="col">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="./images/Venti.jpg" alt="Venti" class="about-image" style="heigth: 500px; width: 500px;">
+                <div class="card" >
+                  <img src="./images/Venti.jpg" alt="Venti" class="card-img-top">
+                  <div class="card-body" >
+                    
                     <h5 class="card-title">Venti</h5>
                     <p class="card-text">Venti là một nhân vật hệ Phong mà người chơi có thể điều khiển trong Genshin
                       Impact.
@@ -90,9 +135,9 @@
 
               <div class="col">
                 <div class="card">
+                  <img src="./images/Zhongli.jpg" alt="Zhongli" class="about-image"
+                  >
                   <div class="card-body">
-                    <img src="./images/Zhongli.jpg" alt="Zhongli" class="about-image"
-                      style="heigth: 500px; width: 500px;">
                     <h5 class="card-title">Zhongli</h5>
                     <p class="card-text">Zhongli là nhân vật hệ Nham chơi được trong Genshin Impact.
                       Zhongli vốn là Nham Thần Morax, hiện tại đang dùng thân phận cố vấn của Vãng Sinh Đường với mong
@@ -110,9 +155,9 @@
 
               <div class="col">
                 <div class="card">
+                  <img src="./images/RaidenShogun.jpg" alt="Raiden" class="about-image"
+                  >
                   <div class="card-body">
-                    <img src="./images/RaidenShogun.jpg" alt="Raiden" class="about-image"
-                      style="heigth: 500px; width: 500px;">
                     <h5 class="card-title">Raiden shogun</h5>
                     <p class="card-text">Raiden Shogun (Tiếng Nhật: 雷らい電でん将しょう軍ぐん Raiden Shougun) là nhân vật chơi được
                       hệ Lôi trong Genshin Impact.
@@ -131,8 +176,8 @@
 
               <div class="col">
                 <div class="card">
+                  <img src="./images/Nahida.jpg" alt="Nahida" class="about-image" style="height: 960px;">
                   <div class="card-body" id="Nahida">
-                    <img src="./images/Nahida.jpg" alt="Nahida" class="about-image" style="height: 935px;">
                     <h5 class="card-title">Nahida</h5>
                     <p class="card-text">Nahida là một nhân vật hệ Thảo trong Genshin Impact.
 
@@ -149,7 +194,7 @@
               </div>
             </div>
           </div>
-        </section>
+      </section>
       
       <section class="sidebar col-3" id="slidebar">
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -188,6 +233,8 @@
         </div>
       </section>
     </div>
+    </div>
+    
   </main>
   <footer>
 
@@ -268,7 +315,7 @@
 
     <div>
       <a href="#" class="top">
-        <i class="fa-solid fa-chevron-up"></i>
+        <i class="fa-solid fa-circle-chevron-up"></i>
       </a>
     </div>
   </footer>
