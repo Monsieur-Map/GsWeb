@@ -1,74 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teyvat Saga</title>
 
-    <link 
-        rel = "shortcut icon"
-        href = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EADkQAAICAQIDBgMHAwMFAQAAAAABAgMEBRESITETIkFRYXEygaEUIzNScpHRJELBFTSxU2JzkvAG/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAIDBAEFBv/EADARAQACAgEDAwIEBQUBAAAAAAABAgMRIQQSMSJBURNxIzJhgTNCUqGxJFORwdEU/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYb2QEW/OponwTb4vSO+xKK7TrjtaNw7VWxsipRlun0e/Uj4RmNTqXUOAAAAAAAAAAAAAAAAAAAAAAAAAAjZVyqhOTfKK3YjkiNzqEbTq+KE8i1d6578/GPgiV7a4+F+Wdemvt/lyxd8XLniv4Pjr9vI7MbjbmXV6xf9lrCXEiClsAAAAAAAAAAAAAAAAAAAAAAAAayey3Aq8pyycmGNDmn3pvySJV4juXYoiIm8t82zaP3fJQ2SZjtfuusxU+fdpmN34cMulfeU89l5eKNWOfZGI7bTSfEpmJbGyqMovk1ujsxqdKJ44SjjgAAAAAAAAAAAAAAAAAAAAAAAjZVkYwe77q+L2HngiNzpEwFJUzyrFtZa+S9COa3bGoab8zFI9nPKjvTz6Ix4/K3H5aaddw2uufOFn0NdeDPTcd0eW+Lvi5dmJJ8vjr9Y+Rdbmvcy31aO+FtCW6IK2wAAAAAAAAAAAAAAAAAAAAAGsnsBVZe+TkV4sejlvP9PUnWNRNl2L0xNpS596aritox5Ix5J7pdrxG0fKX3M15FdYW0nlXPu7bGyvMNKXmN5GHXl1Le6h7tea8V+xZjnmayw2r2WmFhh3xtphOHOMluiGpjiVGtJQAAAAAAAAAAAAAAAAAAAAAEbKtUIOTeyXNnYjbsRudImnxcarMixd+19328DmWdRqF99bikeyTTHq38jLEI3cs2O1U/U7WOU8c8qprfqa6Rw1zKTp1qrvdc/gt5NPzJWpPmFGeO6Ns4LeHmXYU9+Fb2Vb/l8UjuTdq97HK5i90VONgAAAAAAAAAAAAAAAAAAA0nNRXMCpy5SysiGJDbaXOck+kSdePVK7HHbu8p+QlGEUuSXJFFuXMfM7Zx5qcPVFcQXjUtc2O9EmTrHLuOeVO1sa6Q17cZvbZ+XQ0UhTe3sk5sp5ODTm07O/FlxNfmj4r9iqsatNJ8SyX48LTByYZFMLINOMlvEz2iaz2yRylqW5wZAAAAAAAAAAAAAAAAauSQETJza6FvY+HfovF/I7FZnw7ETKMvteb0TxqfOXxy/glPbTynGq+XSqNGFvGqPFN9ZN7tnPVdKYm/l3t2vp3g+a8Cq1ZcrPbblwxp9nd3uj5EYhdkr3Rwk5j/AKeW5OvlRTypbJczXWGneo2jy5y5eHMviGWbOUsvUMCUcnHxe3xXyshvtJrzS8i2MWHLHba2p9nm9R1WWmpx13X3+XXDdGV9/ouU8e985Y13NN+38FWStqcZq7j5h3Fnpl/hzz8SsKNYdVyo1KmWLa+UXL8OXtIzWwTMd2Oe6GmMseL8StoWqSTTWxRzE6la6bgZAAAAAAAAAAAGrkl1YEbKzacetzssjCK6uR2tZtPAgxvy9Qe+JB00tbO6xbOXsi2a0p+bl2EjHwsfG5ve63xnPmyM3m3EcQnETLpbKVnLdqPikRiNJxERyjzrcfh5r6lkTvyntpVdKqW8fr4kppEoTG3eajdDtKeUlzlEz2p2u0triW1s+0wZN9V1OUj1IzHbZT7TnLZLb1N8REQ7kt7JFdEUt309fETLFktvh238SOlEoWXgUZL4uddq5qcOpbTNanHmGPLhrfnxLhLMyMeP2fUaY5dEukn/ACT+lS/qxz2yrr1eXFPbljcOmLXKveei5Sa8cPIe23sVZI/3o/eG7Fmrb+HP7Sn4etVzsVGVGWLkrl2dvLi/S/Ez5OntWO6vMfLTTPW06nifhbQsTe2/sULm6AyAAAAAAABrJ7ICkt1HJy750abUpOD4Z32PaEH/AJNFcNaxu8q5v7Q74mlVxsVuZN5N/Xin0Xsjls3GqRqHYn5WLg5f3bLy2KdrItENOw9fod2n9Rh0T8xt3vhq6p/lG4d74cbcaU+sWn5k4vp3uhGkrMaXFvs/ctjVoRmY+XaN1d2Pb2bSk47uC/5RVOOaWjaPdMo8YbdYNe6NG1OS/Om79fqcZ5lqzquZas7Cq0S0lzg4uO8X5nY4ncKbV3GphTahh31/e4TWyfw7c17M2YclJ4vDzs2DLT1Ua0ajk5EFRquG8ivpu4tSj7MX6elZ7sVtLcHXZfy5a7WeP9sxYcWnzlk0Lrj3PacfaXiY8laW4vGp+Yerizz5rzH91vpeoQz63KClGUXwzhP4oPyZkyY5pOpbqXi8bhYJlabIAAAAAAOdqfC9h9x5m3HzNKutswUraLJcc6JPaSl6M1xlpkiIycT8s98dt7h2o1CjUm6o3W4+T41TfDJfyS7Jx863DLbc8b1KDqNGp0bzhl5Dh5qxmrDbDfzWGTJ9aPFpVc83UF3ZZmRt62M1Riw+1YZ5z5ve0tPtGXJd7Kva/WyX06f0wpt1lon1TLKlk/8AXt/92NU+I/4I6z9ZbdlkS63WJes2c3SPYnrvu4Trs7VQjxzm3sknzbJ90a3PhppeckRMPWY2nS0nRsm7dvLlU5Tkv7Xt0R5GTN9fNWP5dvWpinFhmfd4iGt6nJb/AOo5G+35z27dJgifyQ8eOqzTr1y0esam3/v8l+8yX/z4I/kh2cuWZ5tLSWo5zfPLvfvM79HF7VhzvvPvLMM/Pb2hlXt+SkxOLF71h3ut8pNdupbLfNuj6cbZVNMP9Lvq+Sx6lZvvnXJL+5PY7EYY/lV27vl2xdH1GxdrPUsminq7Z2OK+RDJ1WGvHZEy7TBe3O5XGBK+Cden25OXN8pZOTN8C/Sjz816TzeIj9Ibun6a0T6Zmf1n/p6DR8J4lcnObsstlxWTa6s87Jk753p6eOnZGlquhWsZAAAAAAAYHCymMlzW4FVqWj4+Wl21W735TXdlH1TRZjy3x81lC2Ol41MKxT1TS3wyf2/FXg/xIL/Jpi+PLPPpn+zLfBevjlvGGm6xFvGnGFq+KtrZr3RbGTJhn1eGS+Kl/wBFbl4F+LPmu75mzHnrdiydPrzDSqyG+01tJeJK0T7M18E+zN96gn2b5/mOVr8uYsMb3K10XTuwTvvX3sucV+VGTqc/d6a+HqYqdupX2oPj0zIfnU/+DBi4yx93q5J3imf0fJp18GzXNeZ9bE78vlq35Y4JNJqLe/1IzOl/1KrDG0i6xJ2bVr6lFuoiPCM5qp9eFCnZbKLXiUTkmycZNx6Vni6c5x41FQgus5cjNfNFZ17uVx5sk/EMwnjRs4NPo+2ZC62vlXEqte2vXPbHx7tuDpufTzPymVaVPJsjbqNryJrpDpCHy8fmZb9TMRrHGv8AL06dNWOb8yu6MSNaSSSXkkZp5nctGojiEuEeE4NgAAAAAAAAADVx38AONlEXvyApdR0Si99ptKu5fBbX3ZL9updjz3pxvcfEqr4a3jlBeXqWmrg1Gr7djbbdtVHvpf8Acv4NFfpZfyTqf7Mt8V6RzzDaWJh6lS79NsT84+X+UXUzXxTq7LbFW0bhG0jCjO92WPlW/gfiy7qMsxGo90MeLnlfqXjuYNLUjKe+lXf+Jr6FeONZY+7dM76efs+ZWx4VHlyaPp6zy+SSNOxbOPig+T57Pw2K82SNcrLfk7npNPosyI7pdOTk+h5uW8US6fFfN48OluRi02Kqil5mSn0S7sfcp9Uxu09sPUwdNFPy8y3hp2TnyUtSu3j4UVcoR9/Mz26iKxrFH7+70qdNvm8rnGwYVQUYQiorokttjNMzM7lqjiNQmxrUeiODfYDIAAAAAAAAAAAAANZRTWwEa/HUuQHmNQh/o+rUZ8IqGNc+xyEuXXpI3YZnLjnHM8xzH/jH1FO2YvDOob6fqSyI/hW/El0a/wDuZpw/i4+33hltxKzhYpRUk901ujPMeyUwkXz30bK9ISKqx+NVo3/prPB1Vds1Hbkuu57027XzFabstcevsq1su9LkkZL27pTzTPiv7LPUZ2YuHRg4z2yMiXAmvD8zMVZibTlt4h7GDFGOlcVVjpun149UYwWy2+b9zFe9r2mbPWrSKxqFrCqMeiRBJulsBkAAAAAAAAAAAAAAAAAw1uBVavhQzMW2ixd2cdn/ACTx3nHaLR7I3rFqzWVFgOWoaRZh5HPMw3wy38dun0PQmYx5YvXxZ5vbOprPmHPScmUW8ax9Ph3L8+PfrhGk+0ri2e+jZsV1UDJWPx6NOvwbw8zp9T4U/Pqellt7PErXULjTKldku+X4dK2XqzHntNa9seZd6XH35O+fEf5dNKi8/PuzpruJuqj9K6v9zN1E9lYxR+73emp/PL0tUdomNqdAAAAAAAAAAAAAAAAAAAAAcrocSA8pqe+lazRqC5Y921OR6eT/AHNuD8TFOOfMcwxdTXttF/lG1rGeLmK2vlGXOO3mbumv307ZZbxqdp+JkK7ScuXnBbrye5nyV7c1fu00nux2Vv4VaUV3pckjV5l5OSONQsM9Sw9OowKH/U5T4E14eMn+25krbuvOWfEN2LF21jHHuutMxoY9FcK/hgtkefe03t3S9WK9saWKIusgAAAAAAAAAAAAAAAAAAAAw1uBVavgwzcW3HsXdsjt7PwZPHknFaLx7IXr3Vmqi0+U9R0aeJkf7vDfZy36vbo/mj0Z/DyxaviXnanXbPsjaTJ1xzK5dHS20/RmjPG5rMfJhnUWhK0etZOTK+X4dK3T8GyrPbsp2x5lRipu3dKTpcXqGp36hJdyL7Kn0Xi/n/Jk6ieylcUfeXodNXe7vS1R4Y7eRja3QAAAAAAAAAAAAAAAAAAAAAAByuhxRfsB5PUt9J1unPhHajIapyP8SN2CYyYpxfHMMnUU7bd8eHLVsd4ubOVS7t8Wlt47+BrwZO+kb9mSYmPCRmJ4WnUadjP+pyXwvbw82UxaL3tlt4hKtd6rC90zGjj49dda2jBKMTzbWm1ptL0q1isdsLBI4kyAAAAAAAAAAAAAAAAAAAAAAAPoBU6zgwzcS6izlGcWt/J+ZPFecdotHsjesWrNVTodqy8ONGel9q0+fBa36dJfsbcvot3U8WefG/E+zGjxepahfqc+df4WOvKCfN/NlfUzGOkYY+8r+mp5u9TVFRiuRja3QAAAAAAAAAAAAAAAAAAAAAAAAAc7a+NMDz+pf/n4ZWRK6u62idkeG3s+li8maMfU2xxrW1GTBF52tcDDrxKIU1RShCKUV5Iota17Ta3mVtY7Y1CclscSZAAAAAAAAAAAAAAAAAAAAAAAAAADVxAylsBkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k="
-        type = "image/x-icon"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teyvat Saga</title>
+
+  <link rel="shortcut icon"
+    href="data:image/jpeg;base64,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"
+    type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
+
 <body>
-    <header>
-        <title> Genshin fandom</title>
-        <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Genshin Fandom</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Introduction</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Feature</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Info</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
+  <header>
+    <div>
+      <title> Genshin fandom</title>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="#">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Genshin Fandom</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <div class="modal-body">
+        <h2 class="fs-5">Tìm hiểu về genshin</h2>
+        <img src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200412/2020041218064280834.jpg"
+          alt="gs">
+        <p>This Genshin Impact là trò chơi nhập vai hành động phiêu lưu thế giới mở
+          được phát triển và phát hành bởi HoYoverse trên các nền tảng PC, iOS/Android, và PS4/PS5.
+
+          Đây là một trò chơi miễn phí sử dụng phương thức kinh doanh
+          từ hệ thống gacha dưới dạng Cầu Nguyện.</p>
+        <a href="#"></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="main-content row" >
+
+      
+        <section id="about" class="colored-section col-7" >
+
+          <div class="container text-center">
+            <div class="row align-items-start">
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./images/Venti.jpg" alt="Venti" class="about-image" style="heigth: 500px; width: 500px;">
+                    <h5 class="card-title">Venti</h5>
+                    <p class="card-text">Venti là một nhân vật hệ Phong mà người chơi có thể điều khiển trong Genshin
+                      Impact.
+                      Anh là một người hát rong ở Mondstadt, với tâm hồn phóng khoáng và niềm yêu thích với rượu.
+                      Anh cũng chính là nhân dạng hiện tại của Phong Thần Barbatos</p>
+                    <a>
+                      <form action="venti.html" method="get">
+                        <button type="submit" class="btn btn-primary" id="contact_submit">
+                          Tìm hiểu thêm
+                        </button>
+                      </form>
+                    </a>
                   </div>
                 </div>
-              </nav>
-        </div>
-        
-    </header>
-    <main>
-      <div>
-        <div class="modal-body">
-          <h2 class="fs-5">Tìm hiểu về genshin</h2>
-          <img 
-          src="https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20200412/2020041218064280834.jpg"
-          alt="gs"
-          >
-          <p>This Genshin Impact là trò chơi nhập vai hành động phiêu lưu thế giới mở
-            được phát triển và phát hành bởi HoYoverse trên các nền tảng PC, iOS/Android, và PS4/PS5.
-            
-            Đây là một trò chơi miễn phí sử dụng phương thức kinh doanh
-            từ hệ thống gacha dưới dạng Cầu Nguyện.</p>
-          <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button>
-        </div>
-      </div>
-    </main>
-    <footer>
+              </div>
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./images/Zhongli.jpg" alt="Zhongli" class="about-image"
+                      style="heigth: 500px; width: 500px;">
+                    <h5 class="card-title">Zhongli</h5>
+                    <p class="card-text">Zhongli là nhân vật hệ Nham chơi được trong Genshin Impact.
+                      Zhongli vốn là Nham Thần Morax, hiện tại đang dùng thân phận cố vấn của Vãng Sinh Đường với mong
+                      muốn trải nghiệm cuộc sống của người phàm.</p>
+                    <a>
+                      <form action="zhongli.html" method="get">
+                        <button type="submit" class="btn btn-primary" id="contact_submit">
+                          Tìm hiểu thêm
+                        </button>
+                      </form>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-</head>
-<body>
-    
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./images/RaidenShogun.jpg" alt="Raiden" class="about-image"
+                      style="heigth: 500px; width: 500px;">
+                    <h5 class="card-title">Raiden shogun</h5>
+                    <p class="card-text">Raiden Shogun (Tiếng Nhật: 雷らい電でん将しょう軍ぐん Raiden Shougun) là nhân vật chơi được
+                      hệ Lôi trong Genshin Impact.
+                      Raiden Shogun gồm hai thực thể trong cùng một cơ thể: Ei, Lôi Thần hiện tại của Inazuma, và
+                      Shogun, con rối do Ei tạo ra để thay cô cai trị Inazuma.</p>
+                    <a>
+                      <form action="Raiden.html" method="get">
+                        <button type="submit" class="btn btn-primary" id="contact_submit">
+                          Tìm hiểu thêm
+                        </button>
+                      </form>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <div class="card-body" id="Nahida">
+                    <img src="./images/Nahida.jpg" alt="Nahida" class="about-image" style="height: 935px;">
+                    <h5 class="card-title">Nahida</h5>
+                    <p class="card-text">Nahida là một nhân vật hệ Thảo trong Genshin Impact.
+
+                      Cô là nhân dạng của thảo thần hiện tại - Tiểu Vương Kusanali.</p>
+                    <a>
+                      <form action="Nahida.html" method="get">
+                        <button type="submit" class="btn btn-primary" id="contact_submit">
+                          Tìm hiểu thêm
+                        </button>
+                      </form>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      <section class="sidebar col-3" id="slidebar">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/Xilonen.jpg" class="d-block w-100" alt="xilonen">
+              <p>
+                Nhân vật sắp ra mặt mang thuộc tính nham.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Mavuika.jpg" class="d-block w-100" alt="Mavuika">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/Mavuikface.jpg" class="d-block w-100" alt="Face">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+
+    <h2> Đăng ký / Đăng nhập</h2>
+    <h3> Lợi ích của trang web chúng tôi</h3>
+    <ul>
+      <li> Tìm hiểu những nội dung cập nhật sớm nhật từ genshin impact, tra cứu thông tin nhân vật, chỉ số, fact trong
+        tựa game này</li>
+      <li> Có cơ hội để bình luận góp ý mong muốn của bản thân</li>
+      <li> Tham gia thêm sẽ biết thêm:Đ</li>
+    </ul>
+    <form method="get" name="register" class="login">
+      <h3> Thông tin tài khoản</h3>
+      <table>
+        <tr>
+          <td> Tài khoản</td>
+          <td><input type="text" name="txtUsername" required></td>
+        </tr>
+        <tr>
+          <td>Mật khẩu</td>
+          <td><input type="password" name="txtPassword" required></td>
+        </tr>
+      </table>
+      <h3> Thông tin liên hệ</h3>
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" name="txtHoTen" required></td>
+        </tr>
+        <tr>
+          <td>Ngày sinh</td>
+          <td><input type="date" name="txtDate" required></td>
+        </tr>
+        <tr>
+          <td>Phone number</td>
+          <td><input type="tel" name="txtTel" required></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="txtEmail" required></td>
+        </tr>
+        <tr>
+          <td>Region</td>
+          <td>
+            <select>
+              <option value="1">Asia</option>
+              <option value="2">China</option>
+              <option value="3">Western</option>
+              <option value="4">America</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Đăng ký" style="color: green;"></td>
+        </tr>
+      </table>
+    </form>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Introduction</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Feature</a></li>
+
+        </ul>
+      </footer>
+    </div>
+
+
+    <div>
+      <a href="#" class="top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
