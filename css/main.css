@@ -34,14 +34,16 @@ main{
         min-width:300px; 
         border:none;
         margin-top: 20px;
-      
+        transition: 0,5s;
     }
 
-    .card-image-top{
+    .card img:hover{
+        cursor: pointer;
         transform: scale(1,1);
-        transition: all 0,3s ease-in-out;
+        object-fit: cover;
     }
 
+   
     #content{
         display: flex;
         margin-top: 50px;

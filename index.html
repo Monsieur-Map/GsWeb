@@ -37,7 +37,14 @@
                 <a class="nav-link" href="#">Feature</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" aria-disabled="true" >
+                  <form action="register.html" method="get">
+                    <button type="submit" class="btn btn-primary" id="contact_submit">
+                      Đăng ký/ Đăng nhập
+                    </button>
+                  </form>
+                  
+                </a>
               </li>
             </ul>
           </div>
@@ -120,17 +127,15 @@
             <div class="row align-items-start" id="content">
 
               <div class="col">
-                <div class="card" >
-                  <img src="./images/Venti.jpg" alt="Venti" class="card-img-top">
+                <div class="card">
+                  <img src="./images/Venti.jpg" alt="Venti" class="about-image" style="height: 960px;">
                   <div class="card-body" >
-                    
                     <h5 class="card-title">Venti</h5>
-                    <p class="card-text">Venti là một nhân vật hệ Phong mà người chơi có thể điều khiển trong Genshin
-                      Impact.
-                      Anh là một người hát rong ở Mondstadt, với tâm hồn phóng khoáng và niềm yêu thích với rượu.
-                      Anh cũng chính là nhân dạng hiện tại của Phong Thần Barbatos</p>
+                    <p class="card-text">Venti là một nhân vật hệ Phong mà người chơi có thể điều khiển trong Genshin Impact.
+
+                      Anh là một người hát rong ở Mondstadt, với tâm hồn phóng khoáng và niềm yêu thích với rượu. Anh cũng chính là nhân dạng hiện tại của Phong Thần Barbatos.</p>
                     <a>
-                      <form action="venti.html" method="get">
+                      <form action="Nahida.html" method="get">
                         <button type="submit" class="btn btn-primary" id="contact_submit">
                           Tìm hiểu thêm
                         </button>
@@ -142,15 +147,14 @@
 
               <div class="col">
                 <div class="card">
-                  <img src="./images/Zhongli.jpg" alt="Zhongli" class="about-image"
-                  >
-                  <div class="card-body">
+                  <img src="./images/Zhongli.jpg" alt="Zhongli" class="about-image" style="height: 960px;">
+                  <div class="card-body" id="Nahida">
                     <h5 class="card-title">Zhongli</h5>
                     <p class="card-text">Zhongli là nhân vật hệ Nham chơi được trong Genshin Impact.
-                      Zhongli vốn là Nham Thần Morax, hiện tại đang dùng thân phận cố vấn của Vãng Sinh Đường với mong
-                      muốn trải nghiệm cuộc sống của người phàm.</p>
+
+                      Zhongli vốn là Nham Thần Morax, hiện tại đang dùng thân phận cố vấn của Vãng Sinh Đường với mong muốn trải nghiệm cuộc sống của người phàm.</p>
                     <a>
-                      <form action="zhongli.html" method="get">
+                      <form action="Nahida.html" method="get">
                         <button type="submit" class="btn btn-primary" id="contact_submit">
                           Tìm hiểu thêm
                         </button>
@@ -162,16 +166,14 @@
 
               <div class="col">
                 <div class="card">
-                  <img src="./images/RaidenShogun.jpg" alt="Raiden" class="about-image"
-                  >
-                  <div class="card-body">
-                    <h5 class="card-title">Raiden shogun</h5>
-                    <p class="card-text">Raiden Shogun (Tiếng Nhật: 雷らい電でん将しょう軍ぐん Raiden Shougun) là nhân vật chơi được
-                      hệ Lôi trong Genshin Impact.
-                      Raiden Shogun gồm hai thực thể trong cùng một cơ thể: Ei, Lôi Thần hiện tại của Inazuma, và
-                      Shogun, con rối do Ei tạo ra để thay cô cai trị Inazuma.</p>
+                  <img src="./images/Raiden shogun.jpg" alt="Raiden_shogun" class="about-image" style="height: 960px;">
+                  <div class="card-body" >
+                    <h5 class="card-title">Raiden Shogun</h5>
+                    <p class="card-text">Raiden Shogun (Tiếng Nhật: 雷らい電でん将しょう軍ぐん Raiden Shougun) là nhân vật chơi được hệ Lôi trong Genshin Impact.
+
+                      Raiden Shogun gồm hai thực thể trong cùng một cơ thể: Ei, Lôi Thần hiện tại của Inazuma, và Shogun, con rối do Ei tạo ra để thay cô cai trị Inazuma.</p>
                     <a>
-                      <form action="Raiden.html" method="get">
+                      <form action="Nahida.html" method="get">
                         <button type="submit" class="btn btn-primary" id="contact_submit">
                           Tìm hiểu thêm
                         </button>
@@ -290,60 +292,8 @@
   </main>
   <footer>
 
-    <h2> Đăng ký / Đăng nhập</h2>
-    <h3> Lợi ích của trang web chúng tôi</h3>
-    <ul>
-      <li> Tìm hiểu những nội dung cập nhật sớm nhật từ genshin impact, tra cứu thông tin nhân vật, chỉ số, fact trong
-        tựa game này</li>
-      <li> Có cơ hội để bình luận góp ý mong muốn của bản thân</li>
-      <li> Tham gia thêm sẽ biết thêm:Đ</li>
-    </ul>
-    <form method="get" name="register" class="login">
-      <h3> Thông tin tài khoản</h3>
-      <table>
-        <tr>
-          <td> Tài khoản</td>
-          <td><input type="text" name="txtUsername" required></td>
-        </tr>
-        <tr>
-          <td>Mật khẩu</td>
-          <td><input type="password" name="txtPassword" required></td>
-        </tr>
-      </table>
-      <h3> Thông tin liên hệ</h3>
-      <table>
-        <tr>
-          <td>Họ và tên</td>
-          <td><input type="text" name="txtHoTen" required></td>
-        </tr>
-        <tr>
-          <td>Ngày sinh</td>
-          <td><input type="date" name="txtDate" required></td>
-        </tr>
-        <tr>
-          <td>Phone number</td>
-          <td><input type="tel" name="txtTel" required></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td><input type="email" name="txtEmail" required></td>
-        </tr>
-        <tr>
-          <td>Region</td>
-          <td>
-            <select>
-              <option value="1">Asia</option>
-              <option value="2">China</option>
-              <option value="3">Western</option>
-              <option value="4">America</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td><input type="submit" value="Đăng ký" style="color: green;"></td>
-        </tr>
-      </table>
-    </form>
+    
+    
    
 
 
