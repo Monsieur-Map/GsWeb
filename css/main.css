@@ -34,7 +34,12 @@ main{
         min-width:300px; 
         border:none;
         margin-top: 20px;
-        
+      
+    }
+
+    .card-image-top{
+        transform: scale(1,1);
+        transition: all 0,3s ease-in-out;
     }
 
     #content{
@@ -55,8 +60,24 @@ main{
     
 }
 #slidebar{
+    overflow: hidden;
     flex-basis: 30%;
+    .scroll-bar{
+        overflow-y: scroll;
+        max-height: 50%;
+        width:auto;
+        overflow-x: hidden;
+        margin-right: 5px;
+        .video{
+            margin-top: auto;
+            background-color: brown;
+            height: 400px;
+            width: 500px;
+        }
+    }
 }
+
+
 
 footer{
     .top{
