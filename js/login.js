@@ -47,8 +47,10 @@ function validateSingupForm(
   } else return true;
 }
 
+const signup_btn = document.getElementById("signup-btn");
+const login_btn = document.getElementById("login-btn");
+// ----------------------------------------------------------------------------------
 // bắt sự kiện cho button submit đăng ký
-const signup_btn = document.getElementById("contact_submit");
 // nếu có button tại trang hiện tại -> thì bắt sự kiện
 if (signup_btn) {
   signup_btn.addEventListener("click", function (ev) {
@@ -83,9 +85,45 @@ if (signup_btn) {
         fullname: fullname.value,
         birthDate: birthDate.valueAsDate,
         phoneNumb: phoneNumb.value,
+        password: password.value,
       };
       //Lưu object vào Local storage
-      localStorage.setItem(user.email, JSON.stringify(user.user));
+      localStorage.setItem(user.email, JSON.stringify(user));
+      // chuyen trang login
+      window.location.href = "./login.html";
+    }
+  });
+}
+// ----------------------------------------------------------------------------------
+else if (login_btn) {
+  login_btn.addEventListener("click", function (ev) {
+    //preventDefault
+    ev.preventDefault();
+    // lay du lieu tu form nhap
+    const email = document.getElementById("txtEmail");
+    const password = document.getElementById("txtPassword");
+    // kiem tra du lieu tu he thong
+    console.log(email.value);
+    const user = JSON.parse(localStorage.getItem(email.value));
+    if (user) {
+      // user da co trong he thong
+      // kiem tra password
+      if (user.password === password.value) {
+        // luu du lieu vao current user
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        // hoan tat dang nhap
+        alert("Login successful!");
+        // chuyen trang home
+        window.location.href = "../index.html";
+      } else {
+        // sai mat khau
+        alert("Email or password is not correct!");
+        return;
+      }
+    } else {
+      // khong ton tai user
+      alert("User is not exist, please signup first!");
+      return;
     }
   });
 }
