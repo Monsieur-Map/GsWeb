@@ -30,8 +30,9 @@ footer{
 
 main{
     .card{
-        max-width: 500px; 
-        min-width:300px; 
+        max-width: 380px; 
+        min-width:350px; 
+        
         border:none;
         margin-top: 20px;
         transition: 0,5s;
@@ -78,13 +79,13 @@ main{
         overflow-y: scroll;
         max-height: 50%;
         width:auto;
-        overflow-x: hidden;
+        overflow-x: scroll;
         margin-right: 5px;
         .video{
             margin-top: auto;
             background-color: brown;
             height: 400px;
-            width: 500px;
+            width: 600px;
         }
     }
 
@@ -120,6 +121,11 @@ footer{
     margin: 0;
 }
 
+footer{
+    svg{
+        width: 20px;
+    }
+}
 
 
 
