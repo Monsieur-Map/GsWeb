@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // neu chua dang nhap -> login
     login_home_btn.textContent = "Đăng ký/ Đăng nhập";
     login_home_btn.addEventListener("click", function () {
-      location.href = "../html/login.html";
+      location.href = "./html/login.html";
     });
   } else {
     // kiem tra neu da dang nhap -> doi thanh logout
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // xoa du lieu -> dang xuat
       localStorage.removeItem("currentUser");
       // reload trang index
-      location.href = "../index.html";
+      location.href = "./index.html";
     });
   }
 });
