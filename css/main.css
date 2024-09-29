@@ -100,15 +100,12 @@ footer{
         position: fixed;
         bottom: 10px;
         right: 10px;
-        background-color: cyan;
+        background-color: orange;
         padding: 20px;
-        border-radius: 20px;
-
+        border-radius: 50%;
         
     }
-    .top img{
-        width: 80px;
-    }
+   
 }
 .link  img{
     height: 50px;
