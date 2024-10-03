@@ -125,5 +125,10 @@ footer{
     }
 }
 
-
+@media only screen and (max-width: 600px) {
+    #slidebar{
+        flex-basis: 100%;
+        
+    }
+  }
 
