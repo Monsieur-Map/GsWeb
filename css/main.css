@@ -20,7 +20,8 @@ footer{
    .img-fluid{
     min-height: 400px; 
     width: 100%; 
-    object-fit: cover;
+    object-fit: cover; 
+    //  sử dụng để chỉ định cách thay đổi kích thước của <img> hoặc <video> để phù hợp với vùng chứa của nó.
    }
    .intro{
     text-align: center;
