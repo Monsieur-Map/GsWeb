@@ -114,7 +114,7 @@ else if (login_btn) {
         // hoan tat dang nhap
         alert("Login successful!");
         // chuyen trang home
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
       } else {
         // sai mat khau
         alert("Email or password is not correct!");
