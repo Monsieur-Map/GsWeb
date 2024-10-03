@@ -52,16 +52,15 @@
                   <a class="nav-link" href="#contact"> Liên hệ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-disabled="true">
-                    <button
-                      type="submit"
-                      class="btn btn-primary"
-                      id="contact_submit"
-                    ></button>
-                  </a>
+                  <a class="nav-link" aria-disabled="true"> </a>
                 </li>
               </ul>
             </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="contact_submit"
+            ></button>
           </div>
         </nav>
       </div>
@@ -137,12 +136,13 @@
           <section id="about" class="colored-section col-md-9">
             <div class="container text-center">
               <div class="row align-items-start" id="content">
-                <div id="type-selected" class="row">
+                <div class="row">
                   <select
                     class="form-select form-select-lg mb-3"
                     aria-label="Large select example"
+                    id="type-selected"
                   >
-                    <option selected>Open this select menu</option>
+                    <option value="none" selected>None</option>
                     <option value="wind">Phong</option>
                     <option value="ground">Nham</option>
                     <option value="electric">Lôi</option>
@@ -152,14 +152,17 @@
                     <option value="ice">Băng</option>
                   </select>
                 </div>
+
                 <div class="col" data-type="wind">
                   <div class="card">
-                    <img
-                      src="./images/Venti.jpg"
-                      alt="Venti"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Venti.jpg"
+                        alt="Venti"
+                        class="about-image"
+                      />
+                    </div>
+
                     <div class="card-body">
                       <h5 class="card-title">Venti</h5>
                       <p class="card-text">
@@ -186,12 +189,14 @@
 
                 <div class="col" data-type="ground">
                   <div class="card">
-                    <img
-                      src="./images/Zhongli.jpg"
-                      alt="Zhongli"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Zhongli.jpg"
+                        alt="Zhongli"
+                        class="about-image"
+                      />
+                    </div>
+
                     <div class="card-body" id="Nahida">
                       <h5 class="card-title">Zhongli</h5>
                       <p class="card-text">
@@ -217,12 +222,14 @@
 
                 <div class="col" data-type="electric">
                   <div class="card">
-                    <img
-                      src="./images/Raiden shogun.jpg"
-                      alt="Raiden_shogun"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Raiden shogun.jpg"
+                        alt="Raiden_shogun"
+                        class="about-image"
+                      />
+                    </div>
+
                     <div class="card-body">
                       <h5 class="card-title">Raiden Shogun</h5>
                       <p class="card-text">
@@ -249,12 +256,15 @@
 
                 <div class="col" data-type="grass">
                   <div class="card">
-                    <img
-                      src="./images/Nahida.jpg"
-                      alt="Nahida"
-                      class="about-image"
-                      style="height: 1100px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Nahida.jpg"
+                        alt="Nahida"
+                        class="about-image"
+                        style="height: 1100px"
+                      />
+                    </div>
+
                     <div class="card-body" id="Nahida">
                       <h5 class="card-title">Nahida</h5>
                       <p class="card-text">
@@ -279,12 +289,13 @@
 
                 <div class="col" data-type="water">
                   <div class="card">
-                    <img
-                      src="./images/Furina.jpg"
-                      alt="Nahida"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Furina.jpg"
+                        alt="Nahida"
+                        class="about-image"
+                      />
+                    </div>
                     <div class="card-body" id="Nahida">
                       <h5 class="card-title">Furina</h5>
                       <p class="card-text">
@@ -313,12 +324,14 @@
 
                 <div class="col" data-type="fire">
                   <div class="card">
-                    <img
-                      src="./images/Arlecchino.jpg"
-                      alt="Nahida"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Arlecchino.jpg"
+                        alt="Nahida"
+                        class="about-image"
+                      />
+                    </div>
+
                     <div class="card-body" id="Nahida">
                       <h5 class="card-title">Arlecchino</h5>
                       <p class="card-text">
@@ -346,12 +359,14 @@
 
                 <div class="col" data-type="ice">
                   <div class="card">
-                    <img
-                      src="./images/Ayaka.jpg"
-                      alt="Nahida"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/Ayaka.jpg"
+                        alt="Nahida"
+                        class="about-image"
+                      />
+                    </div>
+
                     <div class="card-body" id="Ayaka">
                       <h5 class="card-title">Ayaka</h5>
                       <p class="card-text">
@@ -379,12 +394,13 @@
 
                 <div class="col" data-type="ice">
                   <div class="card">
-                    <img
-                      src="./images/bennett.jpg"
-                      alt="Nahida"
-                      class="about-image"
-                      style="height: 960px"
-                    />
+                    <div class="card-img-container">
+                      <img
+                        src="./images/bennett.jpg"
+                        alt="Nahida"
+                        class="about-image"
+                      />
+                    </div>
                     <div class="card-body" id="Bennett">
                       <h5 class="card-title">Ayaka</h5>
                       <p class="card-text">
@@ -409,8 +425,6 @@
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </section>
@@ -749,5 +763,6 @@
     ></script>
 
     <script src="./js/nav.js"></script>
+    <script src="./js/type-selected.js"></script>
   </body>
 </html>

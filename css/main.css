@@ -32,18 +32,27 @@ footer{
 
 main{
     .card{
-        max-width: 380px; 
-        min-width:350px; 
-        
+        width: 380px; 
+        overflow: hidden;
         border:none;
         margin-top: 20px;
-        transition: 0,5s;
     }
 
-    .card img:hover{
+    .card-img-container {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+    }
+
+    .card-img-container img {
         cursor: pointer;
-        transform: scale(1,1);
-        object-fit: cover;
+        width: 100%;
+    }
+    
+    
+    .card-img-container img:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.5s ease-in-out;
     }
 
    
@@ -124,6 +133,10 @@ footer{
     svg{
         width: 20px;
     }
+}
+
+.hide {
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
