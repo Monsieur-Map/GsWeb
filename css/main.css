@@ -2,8 +2,19 @@
 header{
     position:relative; //Làm cho các element không bị ảnh hưởng bởi các element khác
     padding:0;
-    
+    li:hover{
+        color:red;
+    }
+    #contact_submit{
+        background-color: white;
+        color: black;
+        text-decoration: wavy;
+    }
+    #contact_submit:hover{
+        background-color: green;
+    }
 }
+
 footer{
     .login{
         width: 300px;
