@@ -12,8 +12,23 @@
     <link>
   </head>
   <style>
+    @media only screen and (max-width: 600px) {
+      #form{
+        flex-basis: 100%;
+      }
+    }
     body{
+    
+      margin: 0 auto;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
       background-image: url(https://preview.redd.it/66ic9c791ih61.png?auto=webp&s=967caa3ebc04e9262d7ba83ee0534015a3a5cb5b);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       
     }
     .col-md-9{
@@ -29,51 +44,62 @@
         text-align: left ;
         
       }
-      button{
-        justify-content: center;
+      .login button {
+        margin-left: 260px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: auto;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #007BFF;
+        text-align: center; /* Đảm bảo nội dung được căn giữa */
+        line-height: 40px; /* Đảm bảo chữ được căn dọc */
+        cursor: pointer;
+        transition: background-color 0.3s ease, 
       }
-      button:hover {
-        font-size:  15px;
-        : center;
+
+      .login button:hover {
+        background-color: #0056b3;
+      }
+
+      .login button:last-of-type {
+        background-color: #6c757d;
+      }
+
+      .login button:last-of-type:hover {
+        background-color: #5a6268;
+      }
+
+      .login form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       }
       h3{
         color:red;
         font-family: Tahoma;
+        margin-left: 100px;
+        
       }
       table{
         color: yellow;
         font-size: large;
         font-family: "Open Sans", sans-serif;
-      }
-    }
-    .welcome{
-        font-family: Tahoma;
         margin-left: 10px;
-        padding: 0;
-        width: 290px;
-        height: 270px;
-        border: 3px solid grey;
-        border-radius: 10px;
-        text-align: left;
-        color:white;
-        text-align: left;
       }
+  
+    
+    
+
   </style>
   <body>
-    <div class="welcome">
-      <h2>Đăng ký </h2>
-      <h3>Lợi ích của trang web chúng tôi</h3>
-      <ul>
-        <li>
-          Tìm hiểu những nội dung cập nhật sớm nhật từ genshin impact, tra cứu
-          thông tin nhân vật, chỉ số, fact trong tựa game này
-        </li>
-        <li>Có cơ hội để bình luận góp ý mong muốn của bản thân</li>
-        <li>Tham gia thêm sẽ biết thêm:Đ</li>
-      </ul>
-    </div>
 
-    
     <div class="col-md-9" id="form">
       <form method="get" name="register" class="login">
         <h3><strong>Thông tin tài khoản</strong></h3>
