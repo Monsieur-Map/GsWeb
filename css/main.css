@@ -47,11 +47,44 @@ footer{
 
 main{
     #exampleDataList{
-        padding-inline: 30px;
-        height: 100%;
+        line-height: 35px;
     }
+
+    .left_search{
+        width: 70%;
+
+    }
+
     #search_items{
-        align-content: center;
+        align-content: left;
+        height: 50px;
+        width: 100%;
+    }
+
+    #search_btn_2{
+        display: flex;
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+        border: none;
+        outline: none;
+        background-color: transparent; /*trong suốt*/
+        svg{
+            height: 100%;
+            width: auto;
+        }
+    
+    }  
+
+    #weapon_items{
+        grid-template-rows: auto;
+        img{
+            padding-top: 10px;
+            object-fit: contain;
+            height: 120px;
+            width: auto;
+        }
+
     }
 
     .card{
@@ -95,6 +128,8 @@ main{
         font-family: Tahoma;
         font-size: 11;
     }
+
+    
 }
 
 
@@ -105,6 +140,15 @@ main{
     background-color: #c5c689;
     position:flex;
     border: solid grey;
+    
+
+    .scroll-bar-2{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        max-height: 50%;
+        width: auto;
+    }
+    
    
     
 }
@@ -189,4 +233,5 @@ footer{
     }
   }
 /* // Responsive chiều rộng của trang slidebar cho phù hợp với kích thước của đa thiết bị */
+
 
