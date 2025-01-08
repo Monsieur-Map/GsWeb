@@ -4,8 +4,8 @@ document.getElementById("type-selected").onchange = function () {
     "#type-selected option:checked"
   ).value;
   // lay danh sach card trong index html
-  const characterListContainer = document.getElementById("content");
-  const characterList = characterListContainer.querySelectorAll(" .col");
+  const characterListContainer = document.getElementById("character_items");
+  const characterList = characterListContainer.querySelectorAll(".col-3");
 
   if (type_selected === "none") {
     // hien thi tat ca card
