@@ -1,237 +1,221 @@
-
-body{
-    background-color: whitesmoke;
+body {
+  background-color: whitesmoke;
 }
-header{
-    /* //Làm cho các element không bị ảnh hưởng bởi các element khác */
-    position:relative; 
-    padding:0;
-    li:hover{
-        color:red;
-    }
-    #contact_submit{
-        background-color: white;
-        color: black;
-        text-decoration: wavy;
-    }
-    #contact_submit:hover{
-        background-color: green;
-    }
-}
-
-footer{
-    .login{
-        width: 300px;
-        height: 360px;
-        border: 2px solid grey;
-    }
-    .submit{
-        color: green;
-    }
-    
+header {
+  /* //Làm cho các element không bị ảnh hưởng bởi các element khác */
+  position: relative;
+  padding: 0;
+  li:hover {
+    color: red;
+  }
+  #contact_submit {
+    background-color: white;
+    color: black;
+    text-decoration: wavy;
+  }
+  #contact_submit:hover {
+    background-color: green;
+  }
 }
 
-.modal-body{
-   .img-fluid{
-    min-height: 400px; 
-    width: 100%; 
-    object-fit: cover; 
+footer {
+  .login {
+    width: 300px;
+    height: 360px;
+    border: 2px solid grey;
+  }
+  .submit {
+    color: green;
+  }
+}
+
+.modal-body {
+  .img-fluid {
+    min-height: 400px;
+    width: 100%;
+    object-fit: cover;
     /* //  sử dụng để chỉ định cách thay đổi kích thước của <img> hoặc <video> để phù hợp với vùng chứa của nó, cắt bớt ảnh để vừa với card */
-   }
-   .intro{
+  }
+  .intro {
     text-align: center;
-
-   }
-    
+  }
 }
 
-main{
-    #exampleDataList{
-        line-height: 35px;
-    }
+main {
+  #exampleDataList {
+    line-height: 35px;
+  }
 
-    .left_search{
-        width: 70%;
-
-    }
-
-    #search_items{
-        align-content: left;
-        height: 50px;
-        width: 100%;
-    }
-
-    #search_btn_2{
-        display: flex;
-        object-fit: cover;
-        height: 100%;
-        width: auto;
-        border: none;
-        outline: none;
-        background-color: transparent; /*trong suốt*/
-        svg{
-            height: 100%;
-            width: auto;
-        }
-    
-    }  
-
-    #weapon_items{
-        grid-template-rows: auto;
-        img{
-            padding-top: 10px;
-            object-fit: contain;
-            height: 120px;
-            width: auto;
-        }
-
-    }
-
-    .card{
-        width: 380px; 
-        overflow: hidden;
-        border:none;
-        margin-top: 20px;
-    }
-
-    .card-img-container {
-        width: 100%;
-        height: 550px;
-        overflow: hidden; 
-        /* //Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
-    }
-
-    .card-img-container img {
-        cursor: pointer;
-        width: 100%;
-    }
-    
-    
-    .card-img-container img:hover{
-        transform: scale(1.2,1.2); 
-        /* //scale độ rộng và cao lên 1.2 */
-        transition: 0.5s ease-in-out;
-    }
-
-   
-    #content{
-        display: flex;
-        margin-top: 50px;
-    }
-    h5 {
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-size: 20;  
-    }
-    p{
-        font-family: Tahoma;
-        font-size: 11;
-    }
-
-    
-}
-
-
-
-
-#about{
-    flex-basis: 70%;
-    background-color: #c5c689;
-    position:flex;
-    border: solid grey;
-    
-
-    .scroll-bar-2{
-        overflow-y: scroll;
-        overflow-x: scroll;
-        max-height: 50%;
-        width: auto;
-    }
-    
-   
-    
-}
-#slidebar{
-    overflow: hidden; 
-    /* //ảnh bị tràn ra được dấu đi */
-    flex-basis: 30%;
-    .scroll-bar{
-        overflow-y: scroll; 
-        /* //scroll được ở chiều dọc */
-        max-height: 50%;
-        width:auto;
-        overflow-x: scroll; 
-        /* //scroll được ở chiều ngang */
-        margin-right: 5px;
-        .video{
-            margin-top: auto;
-            background-color: brown;
-            height: 400px;
-            width: 600px;
-        }
-    }
-
-    background-color: bisque;
-}
-
-
-
-footer{
-    
-    
-    .top{
-        position: fixed; 
-        bottom: 10px;
-        right: 10px;
-        background-color: orange;
-        padding: 20px;
-        border-radius: 50%;
-        
-    }
-    
-   
-}
-
-
-#contact_form{
-    border: 2px solid brown;
-    border-radius: 2%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 25px;
+  .left_search {
     width: 70%;
-    margin-top: 10px;
-}
-.link  img{
+  }
+
+  #search_items {
+    align-content: left;
     height: 50px;
-    border-radius: 50%;
-   
-    
-}
-.wrap-content{
-    border: solid grey;
-    padding: 0 auto;
-    margin: 0;
+    width: 100%;
+  }
+
+  #search_btn_2 {
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: transparent; /*trong suốt*/
+    svg {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  #weapon_items {
+    grid-template-rows: auto;
+    img {
+      padding-top: 10px;
+      object-fit: contain;
+      height: 120px;
+      width: auto;
+    }
+  }
+
+  .card {
+    width: 380px;
+    overflow: hidden;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .card-img-container {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    /* //Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+  }
+
+  .card-img-container img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .card-img-container img:hover {
+    transform: scale(1.2, 1.2);
+    /* //scale độ rộng và cao lên 1.2 */
+    transition: 0.5s ease-in-out;
+  }
+
+  #content {
+    display: flex;
+    margin-top: 50px;
+  }
+  h5 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20;
+  }
+  p {
+    font-family: Tahoma;
+    font-size: 11;
+  }
 }
 
-footer{
-    svg{
-        width: 20px;
+/* character items => image */
+#character_items {
+  col-3 {
+    overflow: hidden;
+  }
+  img {
+    object-fit: contain;
+    width: 80%;
+  }
+  img:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s ease-in-out;
+  }
+}
+
+#about {
+  flex-basis: 70%;
+  background-color: #c5c689;
+  position: flex;
+  border: solid grey;
+
+  .scroll-bar-2 {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 50%;
+    width: auto;
+  }
+}
+#slidebar {
+  overflow: hidden;
+  /* //ảnh bị tràn ra được dấu đi */
+  flex-basis: 30%;
+  .scroll-bar {
+    overflow-y: scroll;
+    /* //scroll được ở chiều dọc */
+    max-height: 50%;
+    width: auto;
+    overflow-x: scroll;
+    /* //scroll được ở chiều ngang */
+    margin-right: 5px;
+    .video {
+      margin-top: auto;
+      background-color: brown;
+      height: 400px;
+      width: 600px;
     }
+  }
+
+  background-color: bisque;
+}
+
+footer {
+  .top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 50%;
+  }
+}
+
+#contact_form {
+  border: 2px solid brown;
+  border-radius: 2%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 25px;
+  width: 70%;
+  margin-top: 10px;
+}
+.link img {
+  height: 50px;
+  border-radius: 50%;
+}
+.wrap-content {
+  border: solid grey;
+  padding: 0 auto;
+  margin: 0;
+}
+
+footer {
+  svg {
+    width: 20px;
+  }
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    #slidebar{
-        flex-basis: 100%;
-        
-    }
+  #slidebar {
+    flex-basis: 100%;
   }
+}
 /* // Responsive chiều rộng của trang slidebar cho phù hợp với kích thước của đa thiết bị */
-
-
