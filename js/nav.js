@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // neu chua dang nhap -> login
     login_home_btn.textContent = "Đăng ký/ Đăng nhập";
     login_home_btn.addEventListener("click", function () {
+      if (window.location.href.includes("index"))
       location.href = "./html/login.html";
+      else location.href = "./login.html";
     });
   } else {
     // kiem tra neu da dang nhap -> doi thanh logout

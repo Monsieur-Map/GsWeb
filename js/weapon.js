@@ -8,8 +8,7 @@ async function loadWeaponFromAPI() {
     .then(
       //Load dữ liệu lên UI
       (data) => {
-        const element = data[0];
-        //  data.forEach((element) => {
+         data.forEach((element) => {
         //Create UI
         const UI_item = `  
                     <div class="col" data-type="${element.type}" id="${element.slug}" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -19,7 +18,7 @@ async function loadWeaponFromAPI() {
                     </div>`;
 
         item_List.innerHTML += UI_item; //Thêm dữ liệu vào UI
-        // });
+         });
       }
     )
     .catch((error) => {
