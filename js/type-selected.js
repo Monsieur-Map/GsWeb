@@ -15,7 +15,7 @@ document.getElementById("type-selected").onchange = function () {
     characterList.forEach((card) => card.classList.add("hide"));
     // hien thi card cung loai
     const selected_cards = document.querySelectorAll(
-      `.col[data-type='${type_selected}']`
+      `.col-3[data-type='${type_selected}']`
     );
     selected_cards.forEach((card) => card.classList.remove("hide"));
   }
