@@ -35,15 +35,21 @@ function searchByName() {
   input = input.toLowerCase();
   let x = document.querySelectorAll("#weapon_items .col");
 
+  is_notfound = true;
   for (i = 0; i < x.length; i++) {
     // lay ten tung item trong HTML
     const item_name = x[i].getElementsByTagName("img")[0].alt.toLowerCase();
     if (!item_name.includes(input)) {
       console.log(x[i]);
       x[i].style.display = "none";
+      
     } else {
       x[i].style.display = "block";
+      is_notfound = false;
     }
+  }
+  if (is_notfound) {
+    alert("Bạn chưa nhập đúng tên vũ khí hoặc vũ khí không tồn tại!!!");
   }
 }
 
