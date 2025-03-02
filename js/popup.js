@@ -2,7 +2,7 @@
 // bat su kien cho nguyen list
 const weapon_List = document.getElementById("weapon_items");
 weapon_List?.addEventListener("click", async (e) => {
-  // lay element can uodate du lieu trong popup
+  // lay element can update du lieu trong popup
   const name = document.getElementById("item_name");
   const rarity = document.getElementById("rarity");
   const obtain_via = document.getElementById("obtain_via");
