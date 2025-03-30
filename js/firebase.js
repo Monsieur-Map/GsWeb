@@ -1,41 +1,41 @@
- // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
- import {
+// Import the functions you need from the SDKs you need
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import {
   getAuth,
   signInWithEmailAndPassword,
-  createUserWithEmailAndPassword
+  createUserWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
- // TODO: Add SDKs for Firebase products that you want to use
- // https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore-lite.js"
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
- // Your web app's Firebase configuration
- // For Firebase JS SDK v7.20.0 and later, measurementId is optional
- const firebaseConfig = {
-   apiKey: "AIzaSyAJUWB5-lSClw3SsKISqxhQoLZbmRvioIY",
-   authDomain: "jsi31-gsweb.firebaseapp.com",
-   databaseURL: "https://jsi31-gsweb-default-rtdb.firebaseio.com",
-   projectId: "jsi31-gsweb",
-   storageBucket: "jsi31-gsweb.firebasestorage.app",
-   messagingSenderId: "71886744724",
-   appId: "1:71886744724:web:53606f7c3bfa7df3121881",
-   measurementId: "G-1LGSQZYV4S"
- };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAJUWB5-lSClw3SsKISqxhQoLZbmRvioIY",
+  authDomain: "jsi31-gsweb.firebaseapp.com",
+  databaseURL: "https://jsi31-gsweb-default-rtdb.firebaseio.com",
+  projectId: "jsi31-gsweb",
+  storageBucket: "jsi31-gsweb.firebasestorage.app",
+  messagingSenderId: "71886744724",
+  appId: "1:71886744724:web:53606f7c3bfa7df3121881",
+  measurementId: "G-1LGSQZYV4S",
+};
 
- // Initialize Firebase
- const app = initializeApp(firebaseConfig);
- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- //validate form
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//validate form
 
- function validateSingupForm(
+function validateSingupForm(
   email,
   password,
   username,
   fullname,
   birthDate,
   phoneNumb
-  ) 
-  {
-  
+) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   // TH: sự kiện null
   if (
@@ -75,8 +75,6 @@
     return false;
   } else return true;
 }
-
-
 
 const signup_btn = document.getElementById("signup-btn");
 const login_btn = document.getElementById("login-btn");
@@ -119,26 +117,24 @@ if (signup_btn) {
         password: password.value,
       };
       //Lưu object vào firebase
-        const auth = getAuth(app);
-        createUserWithEmailAndPassword(auth, user.email, user.password)
-          .then((userCredential) => {
-            // Signed up 
-            const userData = userCredential.user;
-            // ...
-            alert("Signup successfully!")
-            console.log(userData);
-             // chuyen trang login
-            window.location.href = "./login.html";
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // ..
-            alert(error);
-          });
-      }
-     
-    
+      const auth = getAuth(app);
+      createUserWithEmailAndPassword(auth, user.email, user.password)
+        .then((userCredential) => {
+          // Signed up
+          const userData = userCredential.user;
+          // ...
+          alert("Signup successfully!");
+          console.log(userData);
+          // chuyen trang login
+          window.location.href = "./login.html";
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+          alert(error);
+        });
+    }
   });
 }
 // ----------------------------------------------------------------------------------
@@ -150,26 +146,27 @@ else if (login_btn) {
     const email = document.getElementById("txtEmail").value;
     const password = document.getElementById("txtPassword").value;
     // kiem tra du lieu tu he thống
-    if (validatLoginForm(email, password)){
+    if (validatLoginForm(email, password)) {
       //Không có lỗi ở client
       const auth = getAuth(app);
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-      console.log(user);
-      alert("Signin Successfull");
-      window.location.href = "../index.html"
-
-
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert('Firebase error: Your account is not found or password is incorrect')
-    });
-  }});
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          // ...
+          console.log(user);
+          alert("Signin Successfull");
+          window.location.href = "../index.html";
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(
+            "Firebase error: Your account is not found or password is incorrect"
+          );
+        });
+    }
+  });
 }
 function validatLoginForm(email, password) {
   if (email === "" || password === "") {
@@ -194,3 +191,8 @@ function validatLoginForm(email, password) {
   }
   return true;
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Initualize Firebase
+export const firebaseapp = await initializeApp(firebaseConfig);
+export const firestore = await getFirestore(firebaseapp);
