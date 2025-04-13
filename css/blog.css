@@ -1,4 +1,8 @@
 .comments {
+  #postComment{
+    display:flex;
+    overflow: hidden;
+  }
   width: 100%;
   float: left;
   padding: 10px;
@@ -34,6 +38,7 @@
   }
 }
 #commentList{
+  margin-top: 10px;
   svg{
     width:20px;
     margin-right: 10px;

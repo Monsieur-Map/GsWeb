@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  
 }
 header {
   /* //Làm cho các element không bị ảnh hưởng bởi các element khác */
@@ -145,6 +146,9 @@ main {
   background-color: #c5c689;
   position: flex;
   border: solid grey;
+  svg{
+    width:20px;
+  }
 }
 #slidebar {
   overflow: hidden;
@@ -194,10 +198,18 @@ footer {
   height: 50px;
   border-radius: 50%;
 }
+
+
 .wrap-content {
   border: solid grey;
-  padding: 0 auto;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  .form-item-container{
+    display:block;
+    border: solid 1px;
+    flex-wrap: wrap;
+    grid-column: auto;
+  }
 }
 
 footer {
