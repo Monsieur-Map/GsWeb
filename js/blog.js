@@ -84,6 +84,19 @@ function Blog (
   }
 }
 
+// app.get(`/`, (req,res) => {
+//   res.sendFile(path.join(initial_path, "index.html"));
+// })
+
+// app.get(`/blog`, (req,res) => {
+//   res.sendFile(path.join(initial_path, "blog.html"));
+// })
+
+// app.listen("3000", () => {
+//   console.log('listening......');
+// })
+
+
 
 
 
