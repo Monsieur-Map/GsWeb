@@ -7,7 +7,7 @@
     overflow: hidden;
     
   }
-  
+  margin-bottom: 10px;
   width: 98%;
   float: left;
   padding: 10px;
@@ -89,13 +89,17 @@
 
 
 
-
-
-@media (max-width: 768px) {
-  .comments,
-  .sidebar {
+/* Khi màn hình nhỏ hơn 768px (tablet/điện thoại) */
+@media only screen and (max-width: 768px) {
+  #about {
     width: 100%;
-    float: none;
+  }
+}
+
+/* Khi màn hình nhỏ hơn 480px (điện thoại nhỏ) */
+@media only screen and (max-width: 480px) {
+  #about {
+    width: 100%
   }
 }
 
