@@ -23,14 +23,19 @@ async function loadCharacterFromAPI() {
   // load du lieu len HTML
   data.forEach((element) => {
     //Create UI
-    const UI_item = `
-                    <div class="col-3" data-type="${element.vision}" id="${element.id}" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 400px;">
-    
-                        <img src="https://res.cloudinary.com/dnoibyqq2/image/upload/v1617899636/genshin-app/characters/${element.name}/card.jpg" alt="${element.name}" />
-    
-                    </div>`;
+    const div = document.createElement("div");
+    div.className = "col-sm-12 col-lg-4";
+    div.dataset.type = element.vision;
+    div.id = element.id;
+    div.setAttribute("data-bs-toggle", "modal");
+    div.setAttribute("data-bs-target", "#exampleModal");
 
-    item_List.innerHTML += UI_item;
+    const img = document.createElement("img");
+    img.src = `https://res.cloudinary.com/dnoibyqq2/image/upload/v1617899636/genshin-app/characters/${element.name}/card.jpg`;
+    img.alt = element.name;
+
+    div.appendChild(img);
+    item_List.appendChild(div);
   });
 }
 

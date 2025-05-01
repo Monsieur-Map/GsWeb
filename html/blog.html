@@ -18,7 +18,10 @@
     />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/blog.css" />
-    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.7.2-web/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -197,581 +200,334 @@
         </div>
       </div>
     </header>
+
+    <!-- main -->
     <main class="row" width="100%">
       <div class="wrap-content">
-        <h1 id="info" style="padding-left: 20%"><strong>Posts</strong></h1>
+        <h1 id="info" style="text-align: center">
+          <strong>Blogs</strong>
+        </h1>
 
         <!--card info-->
-          <!-- <div class="main-content row">
-          <div class="post_container">
-      
-            <section class="comments" id="about">
-              <input type="file" id="file" />
-              <h2>Bình luận</h2>
-              <textarea
-                id="commentInput"
-                placeholder="Nhập bình luận..."
-              ></textarea>
-              <button id="postComment">Đăng</button>
-              <ul id="commentList"></ul>
-            </section>
-          </div> -->
-          <div class="main-content row"> 
-            <section id="about" class="colored-section col-md-9">
-              <div class="container text-center">
-
-                <div
-                  class="row align-items-start"
-                  id="content"
-                  class="scroll-bar-2"
-                  style="margin: 20px"
-                  class="col-md-9"
-                >
-                  <div class="row">
-                    <div
-                      style="display: flex; align-items: center; gap: 10px"
-                      id="search_items"
-                    >
-                      <div class="left_search" >
-                        <input
-                          class="form-control"
-                          list="datalistOptions"
-                          id="exampleDataList"
-                          placeholder="Search..."
-                        />
-  
-                        <datalist id="datalistOptions">
-                          <option value="Genshin Impact"></option>
-                          <option value="Events"></option>
-                          <option value="Honkai Star Rail"></option>
-                          <option value="Ask for help"></option>
-                          <option value="Updates"></option>
-                        </datalist>
-                       
-                      </div>
-                     
-                      <button id="search_btn_2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="100"
-                          height="100"
-                          viewBox="0 0 128 128"
-                        >
-                          <path
-                            d="M 52.349609 14.400391 C 42.624609 14.400391 32.9 18.1 25.5 25.5 C 10.7 40.3 10.7 64.399219 25.5 79.199219 C 32.9 86.599219 42.600391 90.300781 52.400391 90.300781 C 62.200391 90.300781 71.900781 86.599219 79.300781 79.199219 C 94.000781 64.399219 93.999219 40.3 79.199219 25.5 C 71.799219 18.1 62.074609 14.400391 52.349609 14.400391 z M 52.300781 20.300781 C 60.500781 20.300781 68.700391 23.399219 74.900391 29.699219 C 87.400391 42.199219 87.4 62.5 75 75 C 62.5 87.5 42.199219 87.5 29.699219 75 C 17.199219 62.5 17.199219 42.199219 29.699219 29.699219 C 35.899219 23.499219 44.100781 20.300781 52.300781 20.300781 z M 52.300781 26.300781 C 45.400781 26.300781 38.9 29 34 34 C 29.3 38.7 26.700391 44.800391 26.400391 51.400391 C 26.300391 53.100391 27.600781 54.4 29.300781 54.5 L 29.400391 54.5 C 31.000391 54.5 32.300391 53.199609 32.400391 51.599609 C 32.600391 46.499609 34.699219 41.799219 38.199219 38.199219 C 41.999219 34.399219 47.000781 32.300781 52.300781 32.300781 C 54.000781 32.300781 55.300781 31.000781 55.300781 29.300781 C 55.300781 27.600781 54.000781 26.300781 52.300781 26.300781 z M 35 64 A 3 3 0 0 0 32 67 A 3 3 0 0 0 35 70 A 3 3 0 0 0 38 67 A 3 3 0 0 0 35 64 z M 83.363281 80.5 C 82.600781 80.5 81.850781 80.800391 81.300781 81.400391 C 80.100781 82.600391 80.100781 84.499609 81.300781 85.599609 L 83.800781 88.099609 C 83.200781 89.299609 82.900391 90.6 82.900391 92 C 82.900391 94.4 83.8 96.700391 85.5 98.400391 L 98.300781 111 C 100.10078 112.8 102.39922 113.69922 104.69922 113.69922 C 106.99922 113.69922 109.29961 112.79961 111.09961 111.09961 C 114.59961 107.59961 114.59961 101.90039 111.09961 98.400391 L 98.300781 85.599609 C 96.600781 83.899609 94.300391 83 91.900391 83 C 90.500391 83 89.2 83.300391 88 83.900391 L 85.5 81.400391 C 84.9 80.800391 84.125781 80.5 83.363281 80.5 z M 91.900391 88.900391 C 92.700391 88.900391 93.5 89.200781 94 89.800781 L 106.69922 102.5 C 107.89922 103.7 107.89922 105.59922 106.69922 106.69922 C 105.49922 107.89922 103.6 107.89922 102.5 106.69922 L 89.800781 94.099609 C 89.200781 93.499609 88.900391 92.700391 88.900391 91.900391 C 88.900391 91.100391 89.200781 90.300781 89.800781 89.800781 C 90.400781 89.200781 91.100391 88.900391 91.900391 88.900391 z"
-                          ></path>
-                        </svg>
-                      </button>
-
-                      <select
-                        class="form-select form-select-lg"
-                        aria-label="Large select example"
-                        id="type-selected"
-                        style="flex: 0 0 auto; width: 200px"
-                      >
-                        <option value="none" selected>All blogs</option>
-                        <option value="gs">Genshin Impact</option>
-                        <option value="hsr">Honkai Star Rail</option>
-                        <option value="eve">Events</option>
-                        <option value="wp">Weapons</option>
-                        <option value="character">Character</option>
-                      </select>
-
-                      
-
-                    </div>
-                  </div>
-  
-                  
-                  
-                </div>
-
-              </div>
-
-              <section class="comments" id="about" class="genshin_post">
-                
-                <div class="profile">
-                  <img src="https://i.pinimg.com/736x/af/67/29/af67298f6040c993563a8215b04595d8.jpg" alt="avatar" class="hoyo_avatar">
-                  <span class="name">
-                    Xilonen Xiao <span class="verified">✔️</span><br>
-                    <span class="date">29/09</span>
-                  </span>
-                </div>
-                <div class="banner">
-                  <img
-                  src="https://upload-os-bbs.hoyolab.com/upload/2025/03/18/858129a9d343c5642fcc78d2e09328b4_6337526678659708947.jpg" alt="Saurian"
-                  >
-                </div>
-
-                <div class="static_line" no-preview="true">
-                  <img
-                  src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png" alt="line"
-                  >
-                </div>
-                
-
-                <p>
-                  〓Thời Gian Sự Kiện〓
-                    26/03 - 23:59 04/05 (UTC+8)
-
-                    *Sau khi kết thúc sự kiện sẽ không thể nhận thưởng, Nhà Lữ Hành hãy nhanh tay nhận nhé*
-                </p>
-
-                
-                
-                <ul id="commentList">
-                  <button id="dislike-button">
-                    <img
-                    src="https://i.pinimg.com/originals/5e/05/89/5e0589dd3c0b427b650f5a4e809ca4de.gif"
-                    alt="dislike"
-                    id="dislike-icon"
-                    >
-                    <span id="dislike-count">
-                      2
-                    </span>
-                  </button>
-
-                  <button id="like-button">
-                    <img
-                    src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                    alt="like"
-                    id="like-icon"
-                    >
-                    <span id="like-count">10</span>
-                  </button>
-                </ul>
-
-                <textarea
-                
-                  id="commentInput"
-                  placeholder="Nhập bình luận..."
-                ></textarea>
-                
-
-              </section>
-
-              <section class="comments" id="about" class="hsr_post">
-                
-                <div class="profile">
-                  <img src="https://i.pinimg.com/736x/42/94/6b/42946b2aae8c3dce778db0acb00670be.jpg" alt="avatar" class="hoyo_avatar">
-                  <span class="name">
-                    Simp Lingsha <span class="verified">✔️</span><br>
-                    <span class="date">02/10</span>
-                  </span>
-                </div>
-                
-                <div class="banner">
-                  <img
-                  src="https://upload-os-bbs.hoyolab.com/upload/2025/04/14/116800f10e911949d231f17ae3e6a0f0_4212297022210897334.png" alt="birthday"
-                  >
-                </div>
-                
-
-                <p>
-                  Mi~ Xin chào Nhà Khai Phá!
-
-                  Hai năm trước, Mimo và Nhà Khai Phá cùng bước lên hành trình khai phá trong vũ trụ.
-
-                      Cảm ơn Nhà Khai Phá đã cùng đồng hành, hy vọng mỗi một năm sau này, Nhà Khai Phá sẽ luôn cùng Mimo chu du biển sao, khai phá điều chưa biết!
-                </p>
-                <div class="static_line" no-preview="true">
-                  <img
-                  src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png" alt="line"
-                  >
-                </div>
-
-                
-                
-                <ul id="commentList">
-                  <button id="dislike-button">
-                    <img
-                    src="https://i.pinimg.com/originals/5e/05/89/5e0589dd3c0b427b650f5a4e809ca4de.gif"
-                    alt="dislike"
-                    id="dislike-icon"
-                    >
-                    <span id="dislike-count">
-                      2
-                    </span>
-                  </button>
-
-                  <button id="like-button">
-                    <img
-                    src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                    alt="like"
-                    id="like-icon"
-                    >
-                    <span id="like-count">10</span>
-                  </button>
-                </ul>
-
-                <textarea
-                
-                  id="commentInput"
-                  placeholder="Nhập bình luận..."
-                ></textarea>
-                
-
-              </section>
-             
-              <section class="comments" id="about" class="hsr_post">
-                
-                <div class="profile">
-                  <img src="https://i.pinimg.com/736x/f4/fa/43/f4fa43a0c838805f99e6d9a0aad1802e.jpg" alt="avatar" class="hoyo_avatar">
-                  <span class="name">
-                    Bảy Ngố <span class="verified">✔️</span><br>
-                    <span class="date">07/03</span>
-                  </span>
-                </div>
-                <div class="banner">
-                  <img
-                  src="https://upload-os-bbs.hoyolab.com/upload/2025/04/25/6a945c3ecee1dd74d719da9c5f19e0db_6424623970952941815.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="rewards"
-                  >
-                </div>
-               
-
-                <p>
-                  ▌Thời Gian Sự Kiện
-                  2025/04/26 00:00:00 - 2025/05/10 23:59:00 (UTC+8)
-
-
-                  <br>
-                  ▌ Lưu Ý
-                  ● Tính năng điểm danh bù không dùng cho sự kiện tích lũy điểm danh lần này, hãy chú ý điểm danh nhé.
-
-                  ● Phần thưởng sẽ được phát qua thư trong game, có hiệu lực nhận trong 7 ngày, hãy chú ý nhận nhé.
-
-                  ※Sự kiện Điểm Danh Mỗi Ngày đang diễn ra bình thường, sự kiện tích lũy điểm danh sẽ không ảnh hưởng đến phần thưởng Điểm Danh Mỗi Ngày của bạn.
-
-                  ※Nhà Khai Phá lần đầu hoàn thành điểm danh 3 ngày liên tiếp còn có thể nhận thêm phần thưởng 100 Ngọc Ánh Sao！
-                </p>
-                <div class="static_line" no-preview="true">
-                  <img
-                  src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png" alt="line"
-                  >
-                </div>
-
-              
-                <ul id="commentList">
-                  <button id="dislike-button">
-                    <img
-                    src="https://i.pinimg.com/originals/5e/05/89/5e0589dd3c0b427b650f5a4e809ca4de.gif"
-                    alt="dislike"
-                    id="dislike-icon"
-                    >
-                    <span id="dislike-count">
-                      2
-                    </span>
-                  </button>
-
-                  <button id="like-button">
-                    <img
-                    src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                    alt="like"
-                    id="like-icon"
-                    >
-                    <span id="like-count">10</span>
-                  </button>
-                </ul>
-
-                <textarea
-                
-                id="commentInput"
-                placeholder="Nhập bình luận..."
-                ></textarea>
-              
-                
-
-              </section>
-
-              <section class="comments" id="about" class="hsr_post">
-                
-                <div class="profile">
-                  <img src="https://i.pinimg.com/736x/fe/14/b0/fe14b0adf4c4cb9356e8f77ac01054ff.jpg" alt="avatar" class="hoyo_avatar">
-                  <span class="name">
-                    Chị gạo <span class="verified">✔️</span><br>
-                    <span class="date">09/04</span>
-                  </span>
-                </div>
-                <div class="banner">
-                  <img
-                  src="https://upload-os-bbs.hoyolab.com/upload/2025/04/08/248389737/7cf17f153b0cbb53ca1acfc5356cb230_9199990478547352234.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="rewards"
-                  >
-                </div>
-               
-
-                <p>
-                  Castorice là nhân vật có thể chơi được trong Honkai: Star Rail .
-                  <br>
-                  Vùng đất tôn kính cái chết, Aidonia , nơi tuyết rơi không ngừng, hôm nay đã trôi vào giấc ngủ ngọt ngào. Castorice, con gái của Dòng sông Linh hồn , Chrysos Heir đang tìm kiếm " Cái chết " Coreflame , lên đường. Bạn phải bảo vệ tiếng than khóc của các linh hồn và ôm lấy sự cô đơn của số phận.
-                  <br>
-                  — Sống và chết chỉ là một cuộc hành trình. Khi con bướm đậu trên cành cây, những gì héo úa sẽ nở hoa mới.
-                </p>
-
-                <div class="static_line" no-preview="true">
-                  <img
-                  src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png" alt="line"
-                  >
-                </div>
-
-              
-                
-                <ul id="commentList">
-                  <button id="dislike-button">
-                    <img
-                    src="https://i.pinimg.com/originals/5e/05/89/5e0589dd3c0b427b650f5a4e809ca4de.gif"
-                    alt="dislike"
-                    id="dislike-icon"
-                    >
-                    <span id="dislike-count">
-                      2
-                    </span>
-                  </button>
-
-                  <button id="like-button">
-                    <img
-                    src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                    alt="like"
-                    id="like-icon"
-                    >
-                    <span id="like-count">10</span>
-                  </button>
-                </ul>
-
-                <textarea
-                
-                id="commentInput"
-                placeholder="Nhập bình luận..."
-              ></textarea>
-                
-
-              </section>
-            
-
-
-
-
-            </section>
-            <!-- Slidebar -->
-            <section class="sidebar col-3" id="slidebar" class="float-md-end">
-
-              <div class="func-slidebar button-area" >
-
-              <div class="icon-container">
-                <div  class="icon-edit">
-                  <a id="icon" href="../html/editblog.html">
-                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
-                    </svg>    
-                    <span class="icon-with-text" > Chỉnh sửa</span>    
-                  </a>
-                </div>
-              </div>
-                
-                
-                <div  class="icon-img">
-                  <a id="icon" href="../html/editblog_post.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/>
-                    </svg>
-                    <span class="icon-with-text" > Hình ảnh</span>
-                  </a>
-                </div>
-               
-                <div  class="icon-video">
-                  <a id="icon">
-                    <svg id="icon-video" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/>
-                    </svg>
-                    <span class="icon-with-text" >Video</span>
-                  </a>
-                </div>
-                
-              </div>
-             
-              <!-- Carousel -->
+        <div class="main-content row g-3">
+          <section id="about" class="colored-section col-8 p-3">
+            <!-- search + select -->
+            <div class="row">
               <div
-                id="carouselExampleIndicators"
-                class="carousel slide"
-                class="col-md-9"
-                class="func-slidebar carousel-area"
+                style="display: flex; align-items: center; gap: 10px"
+                id="search_items"
               >
-              <h1 style="text-align: center">SỰ KIỆN SẮP TỚI</h1>
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://cdn.oneesports.vn/cdn-data/sites/4/2024/12/genshin-impact-5.3-xiangling-skin-Tet-1024x576.jpg"
-                      class="d-block w-100"
-                      alt="xialing"
-                    />
-                    <p>
-                      Để sở hữu trang phục “Tết Đến Xuân Về” miễn phí, bạn cần
-                      tham gia sự kiện Tết Hải Đăng 2025 mang tên “Xuân Hi Họa Đào
-                      Phù”. Bằng cách hoàn thành các hoạt động trong sự kiện và
-                      tích lũy “Độ Sôi Nổi Lễ Hội”, bạn sẽ mở khóa được trang phục
-                      Xiangling cùng nhiều phần thưởng hấp dẫn khác.
-                    </p>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://gamelade.vn/wp-content/uploads/2024/12/genshin-25_11zon-1-2048x1024.jpg"
-                      class="d-block w-100"
-                      alt="Tet_banner"
-                    />
-                    <p>
-                      Genshin Impact luôn biết cách chiều lòng người hâm mộ với
-                      những sự kiện và phần thưởng hấp dẫn. Phiên bản 5.0 đã giới
-                      thiệu hệ thống "bắt lấy ánh sáng” và cải tiến banner vũ khí
-                      theo hướng có lợi hơn cho người chơi. Đặc biệt, trong lễ kỷ
-                      niệm 4 năm, Genshin Impact còn cho phép người chơi chọn một
-                      nhân vật trong banner thường hoàn toàn miễn phí. Tiếp nối
-                      truyền thống hào phóng đó,Tết Hải Đăng năm nay hứa hẹn sẽ
-                      càng thêm phần đặc biệt. Về mặt nội dung, Lễ hội sẽ giới
-                      thiệu Lan Yan, một nghệ nhân đan lát đến từ Thung lũng
-                      Chenyu, và xoay quanh hai nhân vật Hu Tao và Xiangling. Cả
-                      hai nhân vật này sẽ được nhận trang phục mới. Giống như
-                      những Tết Hải Đăng trước đây, người chơi sẽ được tham gia
-                      vào nhiều mini-game và hoạt động để nhận Nguyên Thạch.
-                    </p>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://i.pinimg.com/736x/3e/29/b1/3e29b1fb2e6e06e002e8c1caf79c8a1c.jpg"
-                      class="d-block w-100"
-                      alt="Lanyan"
-                    />
-                    <p>
-                      Lan Yan, nhân vật 4 sao mới từ Liyue trong Genshin Impact
-                      5.3, hứa hẹn gây chú ý với bộ kỹ năng độc đáo và vai trò đặc
-                      biệt. Phiên bản Genshin Impact 5.2 hiện đang diễn ra sôi
-                      động, nhưng người chơi đã bắt đầu mong chờ phiên bản 5.3.
-                      Theo tin đồn, Genshin 5.3 sẽ ra mắt hai nhân vật 5 sao mới
-                      là Mavuika và Citlali. Tuy nhiên, gần đây đã xuất hiện một
-                      tin đồn khác về một nhân vật 4 sao đến từ Liyue sẽ góp mặt
-                      trong phiên bản 5.3. Nhân vật 4 sao mới này là Lan Yan,
-                      người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và <strong>pháp khí
-                        (Catalyst)</strong>. Với sự kiện Tết Hải Đăng được cho là sẽ xuất
-                      hiện trong phiên bản 5.3, Lan Yan có khả năng sẽ trở thành
-                      nhân vật đại diện cho sự kiện này.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <div class="left_search">
+                  <input
+                    class="form-control"
+                    list="datalistOptions"
+                    id="exampleDataList"
+                    placeholder="Search..."
+                  />
 
-              <!-- video sự kiện, event sắp tới -->
-              <div class="func-slidebar scroll-bar" class="scroll-bar" style="margin: 20px" class="col-md-9">
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/Bp_GgNSy8eU?si=zCrku9tryDIovaEW"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+                  <datalist id="datalistOptions">
+                    <option value="Genshin Impact"></option>
+                    <option value="Events"></option>
+                    <option value="Honkai Star Rail"></option>
+                    <option value="Ask for help"></option>
+                    <option value="Updates"></option>
+                  </datalist>
                 </div>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/w1BaF4fd1UM?si=jvJNJPlEDSH1rg53"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+
+                <button id="search_btn_2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 128 128"
+                  >
+                    <path
+                      d="M 52.349609 14.400391 C 42.624609 14.400391 32.9 18.1 25.5 25.5 C 10.7 40.3 10.7 64.399219 25.5 79.199219 C 32.9 86.599219 42.600391 90.300781 52.400391 90.300781 C 62.200391 90.300781 71.900781 86.599219 79.300781 79.199219 C 94.000781 64.399219 93.999219 40.3 79.199219 25.5 C 71.799219 18.1 62.074609 14.400391 52.349609 14.400391 z M 52.300781 20.300781 C 60.500781 20.300781 68.700391 23.399219 74.900391 29.699219 C 87.400391 42.199219 87.4 62.5 75 75 C 62.5 87.5 42.199219 87.5 29.699219 75 C 17.199219 62.5 17.199219 42.199219 29.699219 29.699219 C 35.899219 23.499219 44.100781 20.300781 52.300781 20.300781 z M 52.300781 26.300781 C 45.400781 26.300781 38.9 29 34 34 C 29.3 38.7 26.700391 44.800391 26.400391 51.400391 C 26.300391 53.100391 27.600781 54.4 29.300781 54.5 L 29.400391 54.5 C 31.000391 54.5 32.300391 53.199609 32.400391 51.599609 C 32.600391 46.499609 34.699219 41.799219 38.199219 38.199219 C 41.999219 34.399219 47.000781 32.300781 52.300781 32.300781 C 54.000781 32.300781 55.300781 31.000781 55.300781 29.300781 C 55.300781 27.600781 54.000781 26.300781 52.300781 26.300781 z M 35 64 A 3 3 0 0 0 32 67 A 3 3 0 0 0 35 70 A 3 3 0 0 0 38 67 A 3 3 0 0 0 35 64 z M 83.363281 80.5 C 82.600781 80.5 81.850781 80.800391 81.300781 81.400391 C 80.100781 82.600391 80.100781 84.499609 81.300781 85.599609 L 83.800781 88.099609 C 83.200781 89.299609 82.900391 90.6 82.900391 92 C 82.900391 94.4 83.8 96.700391 85.5 98.400391 L 98.300781 111 C 100.10078 112.8 102.39922 113.69922 104.69922 113.69922 C 106.99922 113.69922 109.29961 112.79961 111.09961 111.09961 C 114.59961 107.59961 114.59961 101.90039 111.09961 98.400391 L 98.300781 85.599609 C 96.600781 83.899609 94.300391 83 91.900391 83 C 90.500391 83 89.2 83.300391 88 83.900391 L 85.5 81.400391 C 84.9 80.800391 84.125781 80.5 83.363281 80.5 z M 91.900391 88.900391 C 92.700391 88.900391 93.5 89.200781 94 89.800781 L 106.69922 102.5 C 107.89922 103.7 107.89922 105.59922 106.69922 106.69922 C 105.49922 107.89922 103.6 107.89922 102.5 106.69922 L 89.800781 94.099609 C 89.200781 93.499609 88.900391 92.700391 88.900391 91.900391 C 88.900391 91.100391 89.200781 90.300781 89.800781 89.800781 C 90.400781 89.200781 91.100391 88.900391 91.900391 88.900391 z"
+                    ></path>
+                  </svg>
+                </button>
+
+                <select
+                  class="form-select form-select-lg"
+                  aria-label="Large select example"
+                  id="type-selected"
+                  style="flex: 0 0 auto; width: 400px"
+                >
+                  <option value="none" selected>All blogs</option>
+                  <option value="gs">Genshin Impact</option>
+                  <option value="hsr">Honkai Star Rail</option>
+                  <option value="eve">Events</option>
+                  <option value="wp">Weapons</option>
+                  <option value="character">Character</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- danh sach bai viet -->
+            <div class="py-3 mt-3" id="blog-list">
+              <div class="blog-card">
+                <!-- thong tin nguoi dang -->
+                <div class="profile">
+                  <img
+                    src="https://i.pinimg.com/736x/fe/14/b0/fe14b0adf4c4cb9356e8f77ac01054ff.jpg"
+                    alt="avatar"
+                    class="hoyo_avatar"
+                  />
+                  <div class="user-blog">
+                    <div class="user-name">
+                      Chị gạo <span class="verified">✔️</span>
+                    </div>
+                    <div class="date">09/04</div>
+                  </div>
                 </div>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dz0w5JRG3jY?si=J-0AjcwO307l681T"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+
+                <!-- caption -->
+                <p>
+                  Castorice là nhân vật có thể chơi được trong Honkai: Star Rail
+                  .
+                  <br />
+                  Vùng đất tôn kính cái chết, Aidonia , nơi tuyết rơi không
+                  ngừng, hôm nay đã trôi vào giấc ngủ ngọt ngào. Castorice, con
+                  gái của Dòng sông Linh hồn , Chrysos Heir đang tìm kiếm " Cái
+                  chết " Coreflame , lên đường. Bạn phải bảo vệ tiếng than khóc
+                  của các linh hồn và ôm lấy sự cô đơn của số phận.
+                  <br />
+                  — Sống và chết chỉ là một cuộc hành trình. Khi con bướm đậu
+                  trên cành cây, những gì héo úa sẽ nở hoa mới.
+                </p>
+
+                <!-- hinh anh -->
+                <div class="banner">
+                  <img
+                    src="https://upload-os-bbs.hoyolab.com/upload/2025/04/08/248389737/7cf17f153b0cbb53ca1acfc5356cb230_9199990478547352234.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
+                    alt="rewards"
+                  />
                 </div>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/EM9x7y0BNW8?si=Su2vJoC0UDd3OCKQ"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+
+                <div id="commentList">
+                  <button class="react-button" id="comment-button">
+                    <img
+                      src="https://img.icons8.com/ios7/600/speech-bubble.png"
+                      alt="like"
+                    />
+                    <span class="react-count">10</span>
+                  </button>
+
+                  <button class="react-button" id="like-button">
+                    <img
+                      src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
+                      alt="like"
+                    />
+                    <span class="react-count">10</span>
+                  </button>
                 </div>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/TyCB25oXUA4?si=xdW1PqMMts6G-rfr"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+
+                <!-- phan cach tuyen -->
+                <div class="static_line" no-preview="true">
+                  <img
+                    src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png"
+                    alt="line"
+                  />
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
 
-       
+          <!-- Slidebar -->
+          <section
+            class="sidebar col-4 py-4"
+            id="slidebar"
+            class="float-md-end"
+          >
+            <h1 style="text-align: center">SỰ KIỆN SẮP TỚI</h1>
+            <!-- Carousel -->
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              class="col-md-9"
+              class="func-slidebar carousel-area"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://cdn.oneesports.vn/cdn-data/sites/4/2024/12/genshin-impact-5.3-xiangling-skin-Tet-1024x576.jpg"
+                    class="d-block w-100"
+                    alt="xialing"
+                  />
+                  <p>
+                    Để sở hữu trang phục “Tết Đến Xuân Về” miễn phí, bạn cần
+                    tham gia sự kiện Tết Hải Đăng 2025 mang tên “Xuân Hi Họa Đào
+                    Phù”. Bằng cách hoàn thành các hoạt động trong sự kiện và
+                    tích lũy “Độ Sôi Nổi Lễ Hội”, bạn sẽ mở khóa được trang phục
+                    Xiangling cùng nhiều phần thưởng hấp dẫn khác.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://gamelade.vn/wp-content/uploads/2024/12/genshin-25_11zon-1-2048x1024.jpg"
+                    class="d-block w-100"
+                    alt="Tet_banner"
+                  />
+                  <p>
+                    Genshin Impact luôn biết cách chiều lòng người hâm mộ với
+                    những sự kiện và phần thưởng hấp dẫn. Phiên bản 5.0 đã giới
+                    thiệu hệ thống "bắt lấy ánh sáng” và cải tiến banner vũ khí
+                    theo hướng có lợi hơn cho người chơi. Đặc biệt, trong lễ kỷ
+                    niệm 4 năm, Genshin Impact còn cho phép người chơi chọn một
+                    nhân vật trong banner thường hoàn toàn miễn phí. Tiếp nối
+                    truyền thống hào phóng đó,Tết Hải Đăng năm nay hứa hẹn sẽ
+                    càng thêm phần đặc biệt. Về mặt nội dung, Lễ hội sẽ giới
+                    thiệu Lan Yan, một nghệ nhân đan lát đến từ Thung lũng
+                    Chenyu, và xoay quanh hai nhân vật Hu Tao và Xiangling. Cả
+                    hai nhân vật này sẽ được nhận trang phục mới. Giống như
+                    những Tết Hải Đăng trước đây, người chơi sẽ được tham gia
+                    vào nhiều mini-game và hoạt động để nhận Nguyên Thạch.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.pinimg.com/736x/3e/29/b1/3e29b1fb2e6e06e002e8c1caf79c8a1c.jpg"
+                    class="d-block w-100"
+                    alt="Lanyan"
+                  />
+                  <p>
+                    Lan Yan, nhân vật 4 sao mới từ Liyue trong Genshin Impact
+                    5.3, hứa hẹn gây chú ý với bộ kỹ năng độc đáo và vai trò đặc
+                    biệt. Phiên bản Genshin Impact 5.2 hiện đang diễn ra sôi
+                    động, nhưng người chơi đã bắt đầu mong chờ phiên bản 5.3.
+                    Theo tin đồn, Genshin 5.3 sẽ ra mắt hai nhân vật 5 sao mới
+                    là Mavuika và Citlali. Tuy nhiên, gần đây đã xuất hiện một
+                    tin đồn khác về một nhân vật 4 sao đến từ Liyue sẽ góp mặt
+                    trong phiên bản 5.3. Nhân vật 4 sao mới này là Lan Yan,
+                    người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và
+                    <strong>pháp khí (Catalyst)</strong>. Với sự kiện Tết Hải
+                    Đăng được cho là sẽ xuất hiện trong phiên bản 5.3, Lan Yan
+                    có khả năng sẽ trở thành nhân vật đại diện cho sự kiện này.
+                  </p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- video sự kiện, event sắp tới -->
+            <div
+              class="scroll-bar"
+              class="func-slidebar scroll-bar"
+              style="margin: 20px"
+              class="col-md-9"
+            >
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Bp_GgNSy8eU?si=zCrku9tryDIovaEW"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/w1BaF4fd1UM?si=jvJNJPlEDSH1rg53"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dz0w5JRG3jY?si=J-0AjcwO307l681T"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/EM9x7y0BNW8?si=Su2vJoC0UDd3OCKQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/TyCB25oXUA4?si=xdW1PqMMts6G-rfr"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
+
     <footer>
       <div>
         <a href="#" class="top">

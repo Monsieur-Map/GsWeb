@@ -1,31 +1,27 @@
-.comments {
-  p{
-    margin-top: 15px;
-  }
-  #postComment{
-    display:flex;
-    overflow: hidden;
-    
-  }
-  margin-bottom: 10px;
-  width: 98%;
+.blog-card {
   float: left;
   padding: 10px;
-  box-sizing: border-box;
-  background: 57B4BA;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-left: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  
- 
+  width: 100%;
 
+  /* .banner {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  } */
+  p {
+    margin-top: 15px;
+  }
+  #postComment {
+    display: flex;
+    overflow: hidden;
+  }
 
   h2 {
     margin-bottom: 10px;
-    size:14px;
+    size: 14px;
   }
 
   #postComment {
@@ -39,55 +35,54 @@
   button:hover {
     background: #0056b3;
   }
+
+  .static_line {
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
 }
 
-
-
-#commentList{
-  gap: 8px;
+#commentList {
   display: flex;
+  justify-content: end;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px;
+  gap: 10px;
 }
 
-#dislike-icon{
-  width: 40px;
-  height: 40px;
-  margin-right: 6px;
-  transition: all 0.3 ease-in-out;
-}
-
-#like-button, #chat-button, #dislike-button {
-  background: white; /* nền trắng mặc định */
-  border: 1px solid #ddd;
+.react-button {
+  border: 1px solid transparent;
+  outline: none;
   padding: 8px 16px;
   border-radius: 12px;
   display: flex;
+  gap: 10px;
   align-items: center;
   cursor: pointer;
   font-size: 16px;
   color: #333;
   transition: all 0.3s ease;
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-#like-icon{
-  width: 24px;
-  height: 24px;
-  margin-right: 6px;
-  transition: filter 0.3s;
-}
 
-#like-button.liked , #dislike-button.disliked{
+.reacted {
   background: #e0f7fa; /* nền xanh nhạt khi đã like */
   color: #7b61ff; /* đổi màu chữ */
 }
 
-#like-button.liked #like-icon, #dislike-button.disliked #dislike-icon{
+/* #like-button.liked #like-icon,
+#dislike-button.disliked #dislike-icon {
   filter: hue-rotate(250deg) brightness(1.2); /* đổi màu icon */
-}
-
-
-
-
-
+/* } */
 
 /* Khi màn hình nhỏ hơn 768px (tablet/điện thoại) */
 @media only screen and (max-width: 768px) {
@@ -99,7 +94,6 @@
 /* Khi màn hình nhỏ hơn 480px (điện thoại nhỏ) */
 @media only screen and (max-width: 480px) {
   #about {
-    width: 100%
+    width: 100%;
   }
 }
-
