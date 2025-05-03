@@ -44,7 +44,7 @@ character_List?.addEventListener("click", async (e) => {
   const obtain = document.getElementById("obtain");
 
   // kiem tra dang click tai vi tri nao => lay ra div.col gan nhat
-  const div_clicked = e.target.closest(".col-3");
+  const div_clicked = e.target.closest(".my-card");
   //   load du lieu tu local storage
   const data = JSON.parse(localStorage.getItem("characters"));
   //  loc danh sach => lay ra item can hien thi

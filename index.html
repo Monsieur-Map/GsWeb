@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <!-- Modal -->
+    <!-- popup -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -63,6 +63,15 @@
             </div>
           </div>
           <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+              id="create_btn"
+              onclick="location.href='./html/editblog.html'"
+            >
+              Bài viết
+            </button>
             <button
               type="button"
               class="btn btn-secondary"
@@ -204,7 +213,6 @@
 
         <!--card info-->
         <div class="main-content row g-3">
-
           <section id="about" class="colored-section col-8 p-3">
             <!-- search + select -->
             <select
@@ -225,7 +233,11 @@
             <div class="row g-1" id="character_items"></div>
           </section>
           <!-- Slidebar -->
-          <section class="sidebar col-4 py-4" id="slidebar" class="float-md-end">
+          <section
+            class="sidebar col-4 py-4"
+            id="slidebar"
+            class="float-md-end"
+          >
             <h1 style="text-align: center">SỰ KIỆN SẮP TỚI</h1>
             <!-- Carousel -->
             <div
@@ -607,7 +619,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/nav.js"></script>
+    <script type="module" src="./js/nav.js"></script>
     <script src="./js/type-selected.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/character.js"></script>

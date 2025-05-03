@@ -16,63 +16,20 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/blog.css" />
-    <link rel="stylesheet" href="../css/post.css">
-  
+    <link rel="stylesheet" href="../css/post.css" />
   </head>
 
   <body>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="weapon_popup_title">
-              Weapon details
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex justify-content-center">
-            <div class="card" style="width: 30rem">
-              <div class="card-header" id="item_name">Featured</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="description">An item</li>
-                <li class="list-group-item" id="gender">An item</li>
-                <li class="list-group-item" id="birthday">An item</li>
-                <li class="list-group-item" id="rarity">An item</li>
-                <li class="list-group-item" id="vision">An item</li>
-                <li class="list-group-item" id="weapon">An item</li>
-                <li class="list-group-item" id="obtain">An item</li>
-              </ul>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header>
       <div>
         <!-- Navigator -->
@@ -200,60 +157,100 @@
         </div>
       </div>
     </header>
+
     <main class="row" width="100%">
       <div class="wrap-content">
-        <h1 id="info" style="padding-left: 20%"><strong>Đăng bài</strong></h1>
-        <div class="main-content row"> 
+        <h1 id="info" style="text-align: center"><strong>Đăng bài</strong></h1>
+        <div class="main-content row">
           <section id="about" class="colored-section col-md-9">
             <div class="container text-center">
-      
-              
-
-              <div class="post-container">
+              <form id="create-post-form" class="post-container">
                 <h2>Đăng Bài</h2>
-              
                 <div class="cover-upload">
-                  <label for="cover-upload" class="upload-button">+ Thêm Bìa</label>
-                  <input type="file" id="cover-upload" accept="image*"   hidden>
+                  <div class="form-group">
+                    <label for="coverImage">Link hình ảnh cho bài viết</label>
+                    <input
+                      type="text"
+                      id="coverImage"
+                      placeholder="Vui lòng nhập link bắt đầu từ https://..."
+                    />
+                  </div>
                 </div>
-              
+
                 <div class="form-group">
-                  <label for="title">Tiêu Đề</label>
-                  <input type="text" id="title" placeholder="Vui lòng nhập tiêu đề (bắt buộc)">
+                  <label for="postTitle">Tiêu Đề</label>
+                  <input
+                    type="text"
+                    id="postTitle"
+                    placeholder="Vui lòng nhập tiêu đề (bắt buộc)"
+                  />
                   <small>0/200</small>
                 </div>
-              
+
                 <div class="form-group">
                   <label for="content">Nội Dung</label>
                   <div class="form-text">
+                    <!-- them tag cho bai viet (chi duoc chon 1) -->
+                    <select
+                      class="form-select form-select-lg mb-3"
+                      aria-label="Large select example"
+                      id="type-selected"
+                    >
+                      <option value="none" selected>
+                        Chọn tag cho bài viết
+                      </option>
+                      <option value="gs">Genshin Impact</option>
+                      <option value="events">Events</option>
+                      <option value="honkai">Honkai Star Rail</option>
+                      <option value="characters">Characters</option>
+                      <option value="weapons">Weapons</option>
+                      <option value="qna">Ask for help</option>
+                      <option value="updates">Updates</option>
+                      <option value="others">Others</option>
+                    </select>
+
+                    <!-- thanh cong cu edit -->
                     <div class="editor-toolbar">
                       <!-- Icon buttons -->
                       <button id="undo">↩️</button>
                       <button id="emoji">😊</button>
                       <button>📷</button>
                       <button>🔗</button>
-                      <button id="bold"><i class="fa-solid fa-bold"></i></button>
-                      <button id="italic"><i class="fa-solid fa-italic"></i></button>
+                      <button id="bold">
+                        <i class="fa-solid fa-bold"></i>
+                      </button>
+                      <button id="italic">
+                        <i class="fa-solid fa-italic"></i>
+                      </button>
 
-                      <button id="underlined"><i class="fa-solid fa-underline"></i></button>
-                      <button id="strikethrough"><i class="fa-solid fa-strikethrough"></i></button>
+                      <button id="underlined">
+                        <i class="fa-solid fa-underline"></i>
+                      </button>
+                      <button id="strikethrough">
+                        <i class="fa-solid fa-strikethrough"></i>
+                      </button>
                       <button id="font_color">A</button>
-                    
+
                       <button id="font-size">H</button>
                     </div>
-                     <textarea id="content" rows="8" placeholder="Vui lòng nhập nội dung"></textarea>
-                  </div>
-                  </div>
-                 
-              </div>
-              
 
+                    <textarea
+                      id="postContent"
+                      rows="30"
+                      cols="50"
+                      style="height: max-content"
+                      placeholder="Vui lòng nhập nội dung"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="button-group d-flex gap-2 justify-content-end">
+                  <button class="btn btn-primary" type="submit">Post</button>
+                  <button class="btn btn-secondary" type="reset">Cancel</button>
+                </div>
+              </form>
             </div>
-      
           </section>
 
-          
-      
           <!-- Slidebar -->
           <section class="sidebar col-3" id="slidebar" class="float-md-end">
             <h1 style="text-align: center">SỰ KIỆN SẮP TỚI</h1>
@@ -337,10 +334,10 @@
                     là Mavuika và Citlali. Tuy nhiên, gần đây đã xuất hiện một
                     tin đồn khác về một nhân vật 4 sao đến từ Liyue sẽ góp mặt
                     trong phiên bản 5.3. Nhân vật 4 sao mới này là Lan Yan,
-                    người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và <strong>pháp khí
-                      (Catalyst)</strong>. Với sự kiện Tết Hải Đăng được cho là sẽ xuất
-                    hiện trong phiên bản 5.3, Lan Yan có khả năng sẽ trở thành
-                    nhân vật đại diện cho sự kiện này.
+                    người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và
+                    <strong>pháp khí (Catalyst)</strong>. Với sự kiện Tết Hải
+                    Đăng được cho là sẽ xuất hiện trong phiên bản 5.3, Lan Yan
+                    có khả năng sẽ trở thành nhân vật đại diện cho sự kiện này.
                   </p>
                 </div>
               </div>
@@ -434,7 +431,6 @@
             </div>
           </section>
         </div>
-        
       </div>
     </main>
     <footer>
@@ -629,11 +625,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../js/nav.js"></script>
-    <script src="../js/type-selected.js"></script>
-    <script src="../js/popup.js"></script>
-    <script src="../js/character.js"></script>
-    <script src="../js/blog.js"></script>
-    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/nav.js"></script>
+    <script type="module" src="../js/createPost.js"></script>
   </body>
 </html>

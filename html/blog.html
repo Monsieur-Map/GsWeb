@@ -16,12 +16,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/blog.css" />
     <link
       rel="stylesheet"
       href="../fontawesome-free-6.7.2-web/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
   </head>
 
   <body>
@@ -210,7 +211,11 @@
 
         <!--card info-->
         <div class="main-content row g-3">
-          <section id="about" class="colored-section col-8 p-3">
+          <section
+            id="about"
+            class="colored-section col-8 p-3"
+            style="height: 300vh; overflow-y: hidden"
+          >
             <!-- search + select -->
             <div class="row">
               <div
@@ -257,82 +262,19 @@
                 >
                   <option value="none" selected>All blogs</option>
                   <option value="gs">Genshin Impact</option>
-                  <option value="hsr">Honkai Star Rail</option>
-                  <option value="eve">Events</option>
-                  <option value="wp">Weapons</option>
-                  <option value="character">Character</option>
+                  <option value="events">Events</option>
+                  <option value="honkai">Honkai Star Rail</option>
+                  <option value="characters">Characters</option>
+                  <option value="weapons">Weapons</option>
+                  <option value="qna">Ask for help</option>
+                  <option value="updates">Updates</option>
+                  <option value="others">Others</option>
                 </select>
               </div>
             </div>
 
             <!-- danh sach bai viet -->
-            <div class="py-3 mt-3" id="blog-list">
-              <div class="blog-card">
-                <!-- thong tin nguoi dang -->
-                <div class="profile">
-                  <img
-                    src="https://i.pinimg.com/736x/fe/14/b0/fe14b0adf4c4cb9356e8f77ac01054ff.jpg"
-                    alt="avatar"
-                    class="hoyo_avatar"
-                  />
-                  <div class="user-blog">
-                    <div class="user-name">
-                      Chị gạo <span class="verified">✔️</span>
-                    </div>
-                    <div class="date">09/04</div>
-                  </div>
-                </div>
-
-                <!-- caption -->
-                <p>
-                  Castorice là nhân vật có thể chơi được trong Honkai: Star Rail
-                  .
-                  <br />
-                  Vùng đất tôn kính cái chết, Aidonia , nơi tuyết rơi không
-                  ngừng, hôm nay đã trôi vào giấc ngủ ngọt ngào. Castorice, con
-                  gái của Dòng sông Linh hồn , Chrysos Heir đang tìm kiếm " Cái
-                  chết " Coreflame , lên đường. Bạn phải bảo vệ tiếng than khóc
-                  của các linh hồn và ôm lấy sự cô đơn của số phận.
-                  <br />
-                  — Sống và chết chỉ là một cuộc hành trình. Khi con bướm đậu
-                  trên cành cây, những gì héo úa sẽ nở hoa mới.
-                </p>
-
-                <!-- hinh anh -->
-                <div class="banner">
-                  <img
-                    src="https://upload-os-bbs.hoyolab.com/upload/2025/04/08/248389737/7cf17f153b0cbb53ca1acfc5356cb230_9199990478547352234.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                    alt="rewards"
-                  />
-                </div>
-
-                <div id="commentList">
-                  <button class="react-button" id="comment-button">
-                    <img
-                      src="https://img.icons8.com/ios7/600/speech-bubble.png"
-                      alt="like"
-                    />
-                    <span class="react-count">10</span>
-                  </button>
-
-                  <button class="react-button" id="like-button">
-                    <img
-                      src="https://fastcdn.hoyoverse.com/static-resource-v2/2024/02/01/dfd373ce479643d9d06d2953c3dfcf90_6040573566435334579.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
-                      alt="like"
-                    />
-                    <span class="react-count">10</span>
-                  </button>
-                </div>
-
-                <!-- phan cach tuyen -->
-                <div class="static_line" no-preview="true">
-                  <img
-                    src="https://hyl-static-res-prod.hoyolab.com/divider_config/PC/line_3.png"
-                    alt="line"
-                  />
-                </div>
-              </div>
-            </div>
+            <div class="py-3 mt-3" id="blog-list"></div>
           </section>
 
           <!-- Slidebar -->
@@ -720,12 +662,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../js/nav.js"></script>
-    <script src="../js/type-selected.js"></script>
     <script src="../js/popup.js"></script>
-    <script src="../js/character.js"></script>
-    <script src="../js/blog.js"></script>
-    <script src="../js/button.js"></script>
-    <script type="module" src="../js/firebase.js"></script>
+    <script src="../js/type-selected.js"></script>
+
+    <script type="module" src="../js/nav.js"></script>
+    <script type="module" src="../js/blog.js"></script>
   </body>
 </html>

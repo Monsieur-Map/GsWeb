@@ -24,7 +24,7 @@ async function loadCharacterFromAPI() {
   data.forEach((element) => {
     //Create UI
     const div = document.createElement("div");
-    div.className = "col-sm-12 col-lg-4";
+    div.className = "my-card col-sm-12 col-lg-4";
     div.dataset.type = element.vision;
     div.id = element.id;
     div.setAttribute("data-bs-toggle", "modal");

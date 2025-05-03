@@ -4,19 +4,21 @@ document.getElementById("type-selected").onchange = function () {
     "#type-selected option:checked"
   ).value;
   // lay danh sach card trong index html
-  const characterListContainer = document.getElementById("character_items");
-  const characterList = characterListContainer.querySelectorAll(".col-3");
+  // const characterListContainer = document.getElementById("character_items");
+  const characterList = document.querySelectorAll(".my-card");
 
   if (type_selected === "none") {
     // hien thi tat ca card
     characterList.forEach((card) => card.classList.remove("hide"));
   } else {
-    // an het card
-    characterList.forEach((card) => card.classList.add("hide"));
-    // hien thi card cung loai
-    const selected_cards = document.querySelectorAll(
-      `.col-3[data-type='${type_selected}']`
-    );
-    selected_cards.forEach((card) => card.classList.remove("hide"));
+    characterList.forEach((card) => {
+      if (card.dataset.type == type_selected) {
+        // hien thi card cung loai
+        card.classList.remove("hide");
+      } else {
+        // an card khac loai
+        card.classList.add("hide");
+      }
+    });
   }
 };

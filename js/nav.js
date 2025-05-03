@@ -1,20 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
+import { getUserByEmail } from "./entity/user.entity.js";
+
+document.addEventListener("DOMContentLoaded", async function () {
   const login_home_btn = document.getElementById("contact_submit");
   // lay current user trong local storage -> kiem tra
-  let currentUser = localStorage.getItem("currentUser"); // json
-  if (!currentUser) {
+  let currentUserEmail = localStorage.getItem("currentUser"); // json
+  if (!currentUserEmail) {
     // neu chua dang nhap -> login
     login_home_btn.textContent = "Đăng ký/ Đăng nhập";
+    // chinh link duong dan
     login_home_btn.addEventListener("click", function () {
-      if (window.location.href.includes("index"))
-      location.href = "./html/login.html";
+      if (!window.location.href.includes("/html/"))
+        location.href = "./html/login.html";
       else location.href = "./login.html";
     });
   } else {
+    const userInfo = await getUserByEmail(currentUserEmail);
+    // sua button thanh user fullname
+    login_home_btn.textContent = userInfo.fullName;
+    // them button create blog
+    createBtnCreateBlog();
     // kiem tra neu da dang nhap -> doi thanh logout
-    currentUser = JSON.parse(currentUser); //js
-    console.log(currentUser.username)
-    login_home_btn.textContent = currentUser.username;
     login_home_btn.addEventListener("click", function () {
       // xoa du lieu -> dang xuat
       localStorage.removeItem("currentUser");
@@ -23,3 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// create button create blog
+function createBtnCreateBlog() {
+  const containerNav = document.querySelector("#navbarNav ul");
+
+  const blogItem = document.createElement("li");
+  blogItem.className = "nav-item";
+  blogItem.id = "createPost";
+
+  const blogLink = document.createElement("a");
+  blogLink.className = "nav-link";
+  if (!window.location.href.includes("/html/"))
+    blogLink.href = "./html/editblog.html";
+  else blogLink.href = "./editblog.html";
+  blogLink.textContent = "Create Post";
+
+  blogItem.appendChild(blogLink);
+  containerNav.appendChild(blogItem);
+}

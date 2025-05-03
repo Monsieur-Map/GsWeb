@@ -31,7 +31,7 @@
       Launch demo modal
     </button> -->
 
-    <!-- Modal -->
+    <!-- popup -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -62,16 +62,17 @@
               </ul>
             </div>
           </div>
-          
+
           <div class="modal-footer">
-            <a href="../html/editblog.html">
-              <button
+            <button
               type="button"
               class="btn btn-success"
-              data-bs-dismiss="modal">
-                Bài viết
-              </button>
-            </a>
+              data-bs-dismiss="modal"
+              id="create_btn"
+              onclick="location.href='./editblog.html'"
+            >
+              Bài viết
+            </button>
             <button
               type="button"
               class="btn btn-primary"
@@ -83,6 +84,7 @@
         </div>
       </div>
     </div>
+    
     <header>
       <div>
         <!-- Navigator -->
@@ -130,7 +132,7 @@
                 <li class="nav-item" id="contact">
                   <a class="nav-link" href="#"> Weapons </a>
                 </li>
-                <li class="nav-item" id="blog"></li>
+                <li class="nav-item" id="blog">
                   <a class="nav-link" href="../html/blog.html"> Blogs </a>
                 </li>
 
@@ -236,7 +238,7 @@
                     style="display: flex; align-items: center; gap: 10px"
                     id="search_items"
                   >
-                    <div class="left_search" >
+                    <div class="left_search">
                       <input
                         class="form-control"
                         list="datalistOptions"
@@ -379,10 +381,10 @@
                     là Mavuika và Citlali. Tuy nhiên, gần đây đã xuất hiện một
                     tin đồn khác về một nhân vật 4 sao đến từ Liyue sẽ góp mặt
                     trong phiên bản 5.3. Nhân vật 4 sao mới này là Lan Yan,
-                    người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và <strong>pháp khí
-                      (Catalyst)</strong>. Với sự kiện Tết Hải Đăng được cho là sẽ xuất
-                    hiện trong phiên bản 5.3, Lan Yan có khả năng sẽ trở thành
-                    nhân vật đại diện cho sự kiện này.
+                    người sử dụng nguyên tố <strong>Phong (Anemo)</strong> và
+                    <strong>pháp khí (Catalyst)</strong>. Với sự kiện Tết Hải
+                    Đăng được cho là sẽ xuất hiện trong phiên bản 5.3, Lan Yan
+                    có khả năng sẽ trở thành nhân vật đại diện cho sự kiện này.
                   </p>
                 </div>
               </div>
@@ -478,6 +480,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div>
         <a href="#" class="top">
@@ -665,9 +668,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../js/nav.js"></script>
+    <script src="../js/type-selected.js"></script>
     <script src="../js/weapon.js"></script>
-    <script src="../js/popup.js"></script>
 
+    <script type="module" src="../js/nav.js"></script>
+    <script type="module" src="../js/createPost.js"></script>
   </body>
 </html>
