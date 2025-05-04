@@ -123,7 +123,7 @@ if (signup_btn) {
         );
         await addUser(user);
         alert("Đăng ký thành công!");
-        location.href = "../login.html"; // Chuyển hướng sau khi đăng ký
+        location.href = "./login.html"; // Chuyển hướng sau khi đăng ký
       } catch (err) {
         console.error(err);
         alert("Email đã được sử dụng hoặc có lỗi xảy ra!");

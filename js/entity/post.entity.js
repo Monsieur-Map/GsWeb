@@ -137,4 +137,4 @@ export async function updateLikeCount(postId, delta) {
   }
 }
 
-deletePostById("XBHrhMvDfS9gRdWrHHCg");
+

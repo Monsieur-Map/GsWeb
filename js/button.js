@@ -14,7 +14,7 @@ likeButton.addEventListener('click', () => {
     likeCount.textContent = parseInt(likeCount.textContent) - 1;
   }
 });
-
+  
 const dislikeButton = document.getElementById('dislike-button');
 const dislikeCount = document.getElementById('dislike-count');
 
