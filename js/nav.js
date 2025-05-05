@@ -15,17 +15,23 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   } else {
     const userInfo = await getUserByEmail(currentUserEmail);
-    // sua button thanh user fullname
-    login_home_btn.textContent = userInfo.fullName;
-    // them button create blog
-    createBtnCreateBlog();
-    // kiem tra neu da dang nhap -> doi thanh logout
-    login_home_btn.addEventListener("click", function () {
-      // xoa du lieu -> dang xuat
+    if (userInfo) {
+      // sua button thanh user fullname
+      login_home_btn.textContent = userInfo.fullName || userInfo.email;
+      // them button create blog
+      createBtnCreateBlog();
+      // kiem tra neu da dang nhap -> doi thanh logout
+      login_home_btn.addEventListener("click", function () {
+        // xoa du lieu -> dang xuat
+        localStorage.removeItem("currentUser");
+        // reload trang index
+        location.href = "../index.html";
+      });
+    } else {
+      alert("Tai khoan khong ton tai tren Firestore!");
       localStorage.removeItem("currentUser");
-      // reload trang index
-      location.href = "./index.html";
-    });
+      location.reload();
+    }
   }
 });
 

@@ -77,6 +77,18 @@ export async function getUserByEmail(email) {
   }
 }
 
+// get all user
+export async function getAllUser() {
+  const usersRef = collection(firestore, "users");
+  const querySnapshot = await getDocs(usersRef);
+  const users = querySnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+  console.table(users);
+}
+getAllUser();
+
 // Update user profile (pass an object with fields to update)
 export async function updateUserProfile(email, updatedData) {
   const q = query(collection(firestore, "users"), where("email", "==", email));

@@ -72,7 +72,7 @@ function validatLoginForm(email, password) {
   }
 
   //pass đuôi 6 chữ số
-  if (password.length <= 6) {
+  if (password.length < 6) {
     alert("Password must be at least 6 characters long!");
     return false;
   }
@@ -123,7 +123,7 @@ if (signup_btn) {
         );
         await addUser(user);
         alert("Đăng ký thành công!");
-        location.href = "../login.html"; // Chuyển hướng sau khi đăng ký
+        location.href = "./login.html"; // Chuyển hướng sau khi đăng ký
       } catch (err) {
         console.error(err);
         alert("Email đã được sử dụng hoặc có lỗi xảy ra!");
