@@ -1,0 +1,360 @@
+body {
+  background-color: whitesmoke;
+  margin: 0 5%;
+  overflow-x: hidden;
+  textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .open-file {
+    margin-bottom: 10px;
+  }
+}
+header {
+  /* //Làm cho các element không bị ảnh hưởng bởi các element khác */
+  position: relative;
+  padding: 0;
+  li:hover {
+    color: red;
+  }
+  #contact_submit {
+    background-color: white;
+    color: black;
+    text-decoration: wavy;
+  }
+  #contact_submit:hover {
+    background-color: green;
+  }
+
+  .nav-link:hover {
+    background-color: green;
+  }
+}
+
+footer {
+  .login {
+    width: 300px;
+    height: 360px;
+    border: 2px solid grey;
+  }
+  .submit {
+    color: green;
+  }
+}
+
+.modal-body {
+  .img-fluid {
+    min-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    /* //  sử dụng để chỉ định cách thay đổi kích thước của <img> hoặc <video> để phù hợp với vùng chứa của nó, cắt bớt ảnh để vừa với card */
+  }
+  .intro {
+    text-align: center;
+  }
+}
+
+main {
+  #exampleDataList {
+    line-height: 35px;
+  }
+
+  .left_search {
+    width: 70%;
+  }
+
+  #search_items {
+    align-content: left;
+    height: 50px;
+    width: 100%;
+  }
+
+  #search_btn_2 {
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: transparent; /*trong suốt*/
+    svg {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  #weapon_items {
+    grid-template-rows: auto;
+    img {
+      padding-top: 10px;
+      object-fit: contain;
+      height: 120px;
+      width: auto;
+    }
+  }
+
+  .card {
+    width: 380px;
+    overflow: hidden;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .card-img-container {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    /* //Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+  }
+
+  .card-img-container img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .card-img-container img:hover {
+    transform: scale(1.2, 1.2);
+    /* //scale độ rộng và cao lên 1.2 */
+    transition: 0.5s ease-in-out;
+  }
+
+  #content {
+    display: flex;
+    margin-top: 50px;
+  }
+  h5 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20;
+  }
+  p {
+    font-family: Tahoma;
+    font-size: 11;
+  }
+}
+
+/* character items => image */
+#character_items {
+  img {
+    object-fit: contain;
+    width: 80%;
+    padding: 15px;
+  }
+  img:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.5s ease-in-out;
+  }
+}
+
+#about {
+  background-color: #c5c689;
+  position: flex;
+  border: solid grey;
+  svg {
+    width: 20px;
+  }
+}
+#slidebar {
+  border-top: solid grey;
+  background-color: bisque;
+}
+
+/* Chia các vùng */
+.button-area {
+  display: flex; /* Cho các nút nằm ngang */
+  gap: 50px; /* Khoảng cách giữa các nút */
+  align-items: center;
+  margin: 0 auto; /* Căn giữa theo chiều cao */
+  height: 80px;
+  width: auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #bf9264;
+  padding-right: 100px;
+  padding-left: 100px; /* Thêm padding cho đẹp */
+}
+.icon-container:hover {
+  cursor: pointer;
+}
+.button-area .icon-with-text {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column; /* Icon trên, chữ dưới */
+  align-items: center;
+  color: black;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+.icon-edit {
+  background-color: green;
+  fill: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  box-sizing: content-box; /*Icon không bị tràn ra ngoài*/
+  margin-bottom: 4px;
+}
+.icon-img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  box-sizing: content-box; /*Icon không bị tràn ra ngoài*/
+  margin-bottom: 4px;
+  background-color: aqua;
+  fill: white;
+}
+.icon-video {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  box-sizing: content-box; /*Icon không bị tràn ra ngoài*/
+  margin-bottom: 4px;
+  background-color: orange;
+  fill: white;
+}
+
+.carousel-area {
+  background-color: white;
+}
+
+.scroll-bar {
+  overflow-y: auto; /* Scroll dọc */
+}
+
+.scroll-bar .video {
+  margin-top: 20px;
+  background-color: brown;
+  height: 300px;
+  width: 100%; /* Cho vừa khung cha */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-bar .video iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  .top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+}
+
+#contact_form {
+  border: 2px solid brown;
+  border-radius: 2%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 25px;
+  width: 70%;
+  margin-top: 10px;
+}
+.link img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wrap-content {
+  border: solid grey;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+  .form-item-container {
+    display: block;
+    border: solid 1px;
+    flex-wrap: wrap;
+    grid-column: auto;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.hoyo_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.user-blog {
+ display: flex;
+ flex-direction: column;
+}
+
+.user-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.verified {
+  display: inline-block;
+  font-size: 6px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: aqua;
+  border-radius: 50%;
+  line-height: 25px;
+}
+
+.date {
+  font-weight: normal;
+  font-size: 12px;
+  color: gray;
+}
+
+.banner img {
+  display: flex;
+
+  border-radius: 8px; /* bo góc nhẹ cho đẹp hơn */
+  object-fit: cover;
+  max-width: 70%; /* ngăn hình bị to quá */
+}
+
+footer {
+  svg {
+    width: 20px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #slidebar {
+    flex-basis: 100%;
+  }
+}
+/* // Responsive chiều rộng của trang slidebar cho phù hợp với kích thước của đa thiết bị */
+@media only screen and (max-width: 600px) {
+  #about {
+    flex-basis: 100%;
+  }
+}
