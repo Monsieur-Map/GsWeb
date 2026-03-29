@@ -24,6 +24,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/chatbox.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
@@ -427,17 +429,89 @@
 
     <!-- footer -->
     <footer>
-      
-      <div>
-        <a href="#" class="top">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path
-              d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
-            />
-          </svg>
-        </a>
+      <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+          <i class='bx bx-comment-dots'></i>
+        </div>
+  
+        <div class="chatbox-message-wrapper">
+          <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+              <img src="https://tse3.explicit.bing.net/th/id/OIP.kqV9IAjpihHhwmJjHFBGHAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="" />
+              <div>
+                <h4 class="chatbox-message-name">Mai An Phúc Diego Brando GS</h4>
+                <p class="chatbox-message-status">Online</p>
+              </div>
+              <div class="chatbox-message-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  class="chatbox-message-dropdown-toggle"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="M12 10a2 2 0 1 0 0 4 2 2 0 1 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 1 0 0-4m0-12a2 2 0 1 0 0 4 2 2 0 1 0 0-4"
+                  ></path>
+                </svg>
+                <ul class="chatbox-message-dropdown-menu">
+                  <li>
+                    <a href="#">Search </a>
+                  </li>
+                  <li>
+                    <a href="#">Report</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chatbox-message-content">
+            <div class="chatbox-message-item sent">
+              <span class="chatbox-message-item-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+                atque.
+              </span>
+              <span class="chatbox-messge-item-time">08:30</span>
+            </div>
+  
+            <div class="chatbox-message-item received">
+              <span class="chatbox-message-item-text"></span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+                atque.
+              </span>
+              <span class="chatbox-messge-item-time">08:30</span>
+            </div>
+            
+            
+          </div>
+          <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+              <textarea
+                rows="1"
+                placeholder="Type message..."
+                class="chatbox-message-input"
+              ></textarea>
+              <button type="submit" class="chatbox-message-submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                  <path
+                    d="m2.6 10.42 7.64 3.34 3.34 7.64c.16.37.52.6.92.6h.05a1 1 0 0 0 .9-.69l5.5-17c.12-.36.02-.75-.24-1.01a.98.98 0 0 0-1.01-.24L2.69 8.55c-.4.13-.67.49-.69.9-.02.42.22.8.6.97m15.85-4.86-4.09 12.63-2.44-5.59c-.1-.23-.28-.41-.52-.52L5.81 9.64l12.63-4.09Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
+      
 
       <section id="contact_2" class="colored-section">
         <h1 class="contact_header" style="text-align: center">
@@ -564,7 +638,6 @@
 
           <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item">
-              <i class="fa-solid fa-house"></i>
               <a href="#" id="home" class="nav-link px-2 text-body-secondary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -626,6 +699,7 @@
     <script src="./js/popup.js"></script>
     <script src="./js/character.js"></script>
     <script type="module" src="./js/firebase.js"></script>
+    <script type="module" src="./js/chatbox.js"></script>
   </body>
 </html>
 
