@@ -30,6 +30,8 @@ img {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    width: 4rem;
+    height: 4rem;
     z-index: 1000;
 }
 
@@ -58,7 +60,7 @@ img {
     position: absolute;
     bottom: calc(100% + 1rem);
     right: 0;
-    width: 350px;
+    width: 600px;
     background: var(--white);
     border-radius: 1rem;
     overflow: hidden;
@@ -83,12 +85,14 @@ img {
     justify-content: space-between;
     background: var(--white);
     border-bottom: 1px solid var(--grey-d-1);
+    width: 100%;
 }
 
 .chatbox-message-profile {
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 
 .chatbox-message-profile img {
@@ -171,10 +175,12 @@ img {
 .chatbox-message-content {
     padding: 1.5rem;
     max-height: 300px;
+    min-width: 600px;
     overflow-y: auto;
     background: var(--grey-d-1);
     flex-direction: column;
     grid-row-gap: 1rem;
+    
 }
 
 .chatbox-message-item {
@@ -188,6 +194,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;*/
+    
     margin-left: auto;
     align-self: flex-end;
     background-color: var(--blue);
@@ -205,6 +212,11 @@ img {
 
 .chatbox-message-item-text {
     padding: 1rem;
+    max-width: 60ch;
+    overflow: hidden;
+    white-space: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     /* background: var(--blue);
     color: var(--white);
     border-radius: 1rem 0 1rem 1rem;
@@ -261,11 +273,20 @@ img {
     align-items: center;
 }
 
+.chatbox_message_no_message{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
 
 
 /* Responsive cho mobile */
 @media screen and (max-width: 576px) {
     .chatbox-message-wrapper {
         width: calc(100vw - 2rem);
+    }
+    .chatbox-wrapper{
+        bottom: 1rem;
+        right: 1rem;
     }
 }
